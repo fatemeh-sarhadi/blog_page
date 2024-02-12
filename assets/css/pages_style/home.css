@@ -1,0 +1,49 @@
+
+ .text-justify{
+   text-align: justify;}
+ /* end */
+
+ /* line do taraf darbare dngi */
+ .line{
+   background-color: #0dcaf0;
+   width: 41px;
+   height: 4px;
+   border-radius: 11px;
+   margin-right: 8px;
+   margin-top: 10px;
+ }
+ 
+ .line1 {
+   background-color: #0dcaf0;
+   width: 15px;
+   height: 4px;
+   border-radius: 11px;
+   margin-top: 10px;
+   margin-right: 10px;
+ }
+ 
+ .line2{
+   background-color: #0dcaf0;
+   width: 41px;
+   height: 4px;
+   border-radius: 11px;
+   margin-top: 10px;
+   margin-left: 8px;
+   margin-right: 5px;
+ }
+ 
+ .line3 {
+   background-color: #0dcaf0;
+   width: 15px;
+   height: 4px;
+   border-radius: 11px;
+   margin-left: 4px;
+   margin-top: 10px;
+ }
+ 
+ 
+ /* line samt rast dastan dengi */
+
+ .home{
+    background-image: url(../../img/ep_naturalblack.webp);
+ }
