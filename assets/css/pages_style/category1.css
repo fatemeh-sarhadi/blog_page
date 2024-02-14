@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* سایه زیر هدر */
+}
+
+
+.line {
+    width: 685px;
+    height: 85px;
+    top: 1171px;
+    left: 357px;
+    border-radius: 11px;
+}
+
+
+body {
+    background-image: url(../../img/ep_naturalblack.webp);
+    font-size: 16px;
+
+}
+
+nav .container {
+    flex-direction: row-reverse;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.collapse ul li :hover {
+    color: #d7d7d7ab !important;
+    cursor: pointer;
+}
+
+
+.line4-footer {
+    background-color: #FD7702;
+    width: 41px;
+    height: 4px;
+    border-radius: 11px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.line5-footer {
+    background-color: #FD7702;
+    width: 15px;
+    height: 4px;
+    border-radius: 11px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.img-fluid {
+    border-bottom-style: ridge;
+    width: 195px;
+    margin-top: 40px;
+}
+
+/* portfolio  */
+/* card article------------------ */
+
+/****** start of postcard section*********/
+.mx-10 {
+    /****** distance between postcards *****/
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+}
+
+.post-card {
+
+    margin-top: 18px;
+
+}
+
+.caption-postcard {
+
+
+    margin-top: 20px;
+
+}
+
+.Read-more {
+
+    padding-inline-start: 148px;
+}
+
+
+.img-article:hover {
+    transform: scale(1.2);
+
+}
+
+.img-article {
+
+    transition: transform 1s ease-in-out;
+}
+
+.card-thumbnail {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+/****** end of postcard section ********/
+
+.card-body-article {
+    /* card body text */
+    text-align: justify;
+}
+
+/* ************************************ */
+
+/*  */
+.hover-article:hover {
+    background-color: #FD7702 !important;
+    color: hsl(0, 0%, 100%) !important;
+}
+
+/* .my-portfolio{
+  background-image: url(../../img/ep_naturalblack.webp);
+} */
+
+.card-article {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.arrow,
+.calendar {
+    border: 1.5px solid #fd770258;
+    border-radius: 50px;
+}
+
+/* end  portfolio  */

@@ -1,66 +1,241 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/pages_style/category1.css">
-  <link rel="stylesheet" href="./assets/css/bootstrap-icons.css"><link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css">
-  <script src="./assets/javascript/bootstrap.bundle.min.js"></script>
-  <script src="./assets/javascript/bootstrap.min.js"></script>
-  <script src="./assets/javascript/jquery.min.js"></script>
-  <script src="./assets/javascript/popper.min.js"></script>
-  <title>Raha</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/pages_style/category1.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css">
+    <script src="./assets/javascript/bootstrap.bundle.min.js"></script>
+    <script src="./assets/javascript/bootstrap.min.js"></script>
+    <script src="./assets/javascript/jquery.min.js"></script>
+    <script src="./assets/javascript/popper.min.js"></script>
+    <title>Raha</title>
 </head>
+
 <body>
-  <section class="section pt-5">
-    <div class="container">
-        <div class="row">
+    <nav class="navbar navbar-expand-sm shadow-lg" id="mainNav">
+        <div class="container">
+          <a href="">
+            <button class="btn btn-outline-warning"> ورود</button>
+            <a>
+              <button class="navbar-toggler border-0 navbar-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="navbar-toggler-icon"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                  <li class="nav-item"><a class="nav-link text-white" href=""><img src="">خانه </a></li>
+                  <li class="nav-item"><a class="nav-link text-white" href="about.html"><img src="">درباره ما </a></li>
+                  <li class="nav-item"><a class="nav-link text-white" href=""><img src="">رزومه</a></li>
+                  <li class="nav-item"><a class="nav-link text-white" href=""><img src="">پروژه ها
+                    </a></li>
+                  <li class="nav-item"><a class="nav-link text-white" href=""> </a></li>
+                </ul>
+              </div>
+        </div>
+      </nav>
+    
+    
+      <!-- About
+        ============================================= -->
+      <section class="section pt-5">
+        <div class="container">
+          <div class="row">
             <div class="col-sm-5 text-center mb-5 mb-sm-0">
-                <img class="img-fluid shadow-sm rounded d-inline-block rounded-circle pt-5 pb-3 w-50" src="./assets/img/icons8-female-profile-100.png"
-                    title="I'm Fatemeh Sarhadi" alt="">
-                <div class="media pt-4">
-                    <ul class="text-center " style="list-style-type: none; ">
-                        <li style="margin-right: 26px; ">
-                            <a class="cursor-pointer text-muted p-2" href="https://github.com/fatemeh-sarhadi">
-                                <img class="box" aria-posinset="relative " width="34px " height="32px "
-                                    src="./assets/img/icons8-github.svg">
-                            </a>
-
-                            <a class="cursor-pointer text-muted p-2"
-                                href="https://www.linkedin.com/in/fatemeh-sarhadi/">
-                                <img class="box " aria-posinset="relative " width="34px " height="32px "
-                                    src="./assets/img/icons8-linkedin.svg">
-                            </a>
-                            <a class="cursor-pointer p-2" href="#">
-                                <img class="box " aria-posinset="relative " width="34px " height="32px "
-                                    src="./assets/img/icons8-telegram.svg">
-                            </a>
-
-                        </li>
-                    </ul>
-                </div>
-
+              <img class="img-fluid shadow-lg rounded-circle pt-5 pb-3"
+                src="./assets/img/_DSC3414.JPG" title="I'm Fatemeh Sarhadi" alt="">
+              <div class="media pt-4">
+                <ul class="text-center " style="list-style-type: none; ">
+                  <li style="margin-right: 26px; ">
+                    <a class="cursor-pointer text-muted p-2" href="https://github.com/fatemeh-sarhadi">
+                      <img class="box" aria-posinset="relative " width="34px " height="32px "
+                        src="./assets/img/icons8-github.svg">
+                    </a>
+    
+                    <a class="cursor-pointer text-muted p-2" href="https://www.linkedin.com/in/fatemeh-sarhadi/">
+                      <img class="box " aria-posinset="relative " width="34px " height="32px "
+                        src="./assets/img/icons8-linkedin.svg">
+                    </a>
+                    <a class="cursor-pointer p-2" href="#">
+                      <img class="box " aria-posinset="relative " width="34px " height="32px "
+                        src="./assets/img/icons8-telegram.svg">
+                    </a>
+    
+                  </li>
+                </ul>
+              </div>
+    
             </div>
             <div class="col-sm-7 text-right ps-lg-4 pt-md-5 text-white">
-                <b class="text-white text-align-start pt-sm-5">درباره من </b>
-                <div class="d-flex">
-                    <div class="line5-footer"></div>
-                    <div class="line4-footer"></div>
-                </div>
-                <!-- <h2 class="text-white text-align-start pt-sm-5">درباره من </h2> -->
-                <h3 class="text-6 text-light mb-4 pt-4"> <span class="text-info">من توسعه دهنده وب
-                        هستم.</span></h3>
-                <p class="fs-3 text-dark"> من یک توسعه دهنده وب هستم که علاقه زیادی به ایجاد وب سایت های جذاب و کاربر پسند
-                    دارم. درحال
-                    حاضر دانشجو رشته علوم کامپیوتر در دانشگاه صنعتی بیرجند هستم .</p>
-                <p class="fs-3 text-dark ">من دائماً در حال یادگیری و پیگیری آخرین روندهای توسعه وب هستم . فردی با انگیزه بالا
-                    هستم که در
-                    محیط سریع رشد می کنم</p>
-                <a href="" download>
-                    <button class="btn btn-outline-warning">دانلود رزومه</button>
-                    <a>
+              <b class="text-white text-align-start pt-sm-5">درباره من </b>
+              <div class="d-flex">
+                <div class="line5-footer"></div>
+                <div class="line4-footer"></div>
+              </div>
+              <!-- <h2 class="text-white text-align-start pt-sm-5">درباره من </h2> -->
+              <h3 class="text-6 text-light mb-4 pt-4"> <span class="text-info">من توسعه دهنده وب
+                  هستم.</span></h3>
+              <p class="fs-3"> من یک توسعه دهنده وب هستم که علاقه زیادی به ایجاد وب سایت های جذاب و کاربر پسند
+                دارم. درحال
+                حاضر دانشجو رشته علوم کامپیوتر در دانشگاه صنعتی بیرجند هستم .</p>
+              <p class="fs-3">من دائماً در حال یادگیری و پیگیری آخرین روندهای توسعه وب هستم . فردی با انگیزه بالا
+                هستم که در
+                محیط سریع رشد می کنم</p>
+              <a href="" download>
+                <button class="btn btn-outline-warning">دانلود رزومه</button>
+                <a>
             </div>
-</section>
+      </section>
+      </div>
+      <!-- About end -->
+    
+      <!-- portfolio  -->
+    
+      <div class="container-fluid my-portfolio mt-5 mb-3 ">
+        <div class="row">
+          <section class="mb-3 mt-4 mb-lg-0 col-12 col-lg-6">
+            <div class="d-flex align-items-center">
+              <span class="line5-footer "></span>
+              <span class="line4-footer"></span>
+              <h3 class="story text-white"> پروژه های من  </h3>
+            </div>
+          </section>
+        </div>
+        <div class="text-center d-flex flex-wrap   justify-content-evenly">
+          <div class="card-article border-0 pt-4 shadow-lg" style="width: 22rem;">
+            <div class="card-thumbnail">
+              <img src="./assets/img/Screenshot.png" class="img-article card-img-top pb-2" alt="...">
+            </div>
+    
+            <div class="card-body-article text-white">
+              <h5 class="card-title"> پروژه دنجی
+              </h5>
+              <p class="card-text">یک متن کوتاه توضیحی در این بخش نوشته می شود طول این متن دو خط لطفا باشد</p>
+    
+              <div class="d-flex justify-content-between  p-3 ">
+                <span class=""><img class="calendar" src="./assets/img/calendar.png">
+                  12 فروردین 1399
+                </span>
+                <span class="edame" href="#">ادامه مطلب <img class="arrow"  src="./assets/img/arrow-left.png"></span>
+              </div>
+    
+            </div>
+          </div>
+          <div class="card-article border-0 pt-4 shadow-lg" style="width: 22rem;">
+            <div class="card-thumbnail">
+              <img src="./assets/img/Screenshot (2).png" class="img-article card-img-top   pb-2" alt="...">
+            </div>
+            <div class="card-body-article text-white">
+              <h5 class="card-title">میز کار برنامه نویسی</h5>
+              <p class="card-text">یک متن کوتاه توضیحی در این بخش نوشته می شود طول این متن دو خط لطفا باشد</p>
+    
+              <div class="d-flex justify-content-between p-3">
+                <span class=""><img class="calendar" src="./assets/img/calendar.png">
+                  12 فروردین 1399
+                </span>
+                <span class="edame" href="#">ادامه مطلب <img class="arrow" src="./assets/img/arrow-left.png"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- ///portfolio  -->
+    
+    
+      <!-- contact me -->
+      <!-- <div id="contact">
+        <div class="container">
+          <div class="footer-cta pt-5 pb-5">
+            <div class="row text-white">
+              <div class="col-xl-4 col-md-4 mb-30">
+                <div class="single-cta">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="cta-text">
+                    <h4></h4>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                <div class="single-cta">
+                  <i class="fas fa-phone"></i>
+                  <div class="cta-text">
+                    <h4></h4>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                <div class="single-cta">
+                  <i class="far fa-envelope-open"></i>
+                  <div class="cta-text">
+                    <h4> </h4>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div id="form">
+        <form>
+          <div>
+            <div class="countaine-form pt-4">
+              <div class="container-fluid  pb-3 px-4 py-3 d-block text-center " style="padding-left: 12px; ">
+                <h3 class="pb-2 text-white ">ارتباط با من </h3>
+                <h4 class="pb-1 display-3 fs-4 text-black-50 "><em> </em>
+                </h4>
+                <div class="row ">
+                  <div class="col-md-6 col-sm-6 ">
+                    <form>
+                      <div class="form-group justify-content-center ">
+                        <label for="inputName " style="color:white; "></label>
+                        <input type="text " class="form-control " id="inputName " placeholder="نام خود را وارد کنید.* ">
+                      </div>
+                      <div class="form-group justify-content-center ">
+                        <label for="inputEmail " style="color:white; "></label>
+                        <input type="email " class="form-control " id="inputEmail " aria-describedby="emailHelp "
+                          placeholder="ایمیل خود را وارد کنید.*">
+                      </div>
+                      <div class="form-group justify-content-center ">
+                        <label for="inputPhone " style="color:white; "></label>
+                        <input type="text " class="form-control " id="inputPhone "
+                          placeholder="شماره تلفن خود را وارد کنید.*">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-md-6 col-sm-6 ">
+                    <div class="form-group justify-content-center ">
+                      <label for="inputComment " style="color:white; "></label>
+                      <textarea class="form-control " id="inputComment " rows="6 " placeholder="پیامی بنویسید. "></textarea>
+                    </div>
+                  </div>
+                </div>
+    
+                <br>
+                <div class=" text-center border-3 justify-content-center ">
+                  <button type="submit " class="btn btn-outline-warning"><b>پیامتو بفرست </b></button>
+                </div>
+    
+              </div>
+    
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- end of contact me -->
+      </div>
+      <footer>
+        <div style="background-color: #3434349e;">
+          <div class="container d-flex align-items-center justify-content-center" style=" height: 40px">
+            <div class="col-lg-4 text-white text-center">Copyright &copy; FatemehSarhadi 2023</div>
+        
 </body>
+
 </html>
