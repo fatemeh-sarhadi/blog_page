@@ -74,29 +74,9 @@ nav .container {
 /* card article------------------ */
 
 /****** start of postcard section*********/
-.mx-10 {
-    /****** distance between postcards *****/
-    margin-right: 10px !important;
-    margin-left: 10px !important;
-}
-
-.post-card {
-
-    margin-top: 18px;
-
-}
-
-.caption-postcard {
 
 
-    margin-top: 20px;
 
-}
-
-.Read-more {
-
-    padding-inline-start: 148px;
-}
 
 
 .img-article:hover {
@@ -145,4 +125,7 @@ nav .container {
     border-radius: 50px;
 }
 
+.edame{
+    cursor: pointer;
+}
 /* end  portfolio  */
