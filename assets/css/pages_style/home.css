@@ -1,4 +1,6 @@
-
+.home{
+    background-image: url(../../img/noisy_net.png);
+ }
  .text-justify{
    text-align: justify;}
  /* end */
@@ -44,6 +46,3 @@
  
  /* line samt rast dastan dengi */
 
- .home{
-    background-image: url(../../img/ep_naturalblack.webp);
- }
