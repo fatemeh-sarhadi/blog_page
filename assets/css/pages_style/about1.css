@@ -105,9 +105,8 @@ nav .container {
 /* ************************************ */
 
 /*  */
-.hover-article:hover {
-    background-color: #FD7702 !important;
-    color: hsl(0, 0%, 100%) !important;
+.edame:hover {
+   color: #FD7702 !important;
 }
 
 /* .my-portfolio{
@@ -125,7 +124,12 @@ nav .container {
     border-radius: 50px;
 }
 
-.edame{
+.edame {
     cursor: pointer;
 }
+
+.edame:hover{
+    background-color: #FD7702;
+}
 /* end  portfolio  */
+

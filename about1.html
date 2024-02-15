@@ -82,91 +82,124 @@
       </section>
     </div>
     <div class="text-center d-flex flex-wrap   justify-content-evenly">
-      <div class="card-article border-0 pt-4 shadow-lg" style="width: 22rem;">
+      <div class="card-article border-0 shadow-lg" style="width: 22rem;">
         <div class="card-thumbnail">
           <img src="./assets/img/Screenshot.png" class="img-article card-img-top pb-2" alt="...">
         </div>
 
-        <div class="card-body-article text-white p-3 ">
+        <div class="card-body-article text-white p-3">
           <h5 class="card-title"> پروژه دنجی
           </h5>
-          <p class="card-text"> این پروژه تیمی انجام شده و  با استفاده از html , css , javascript , bootstrap انجام شده .</p>
-          <div class="d-flex justify-content-between  p-3 mb-1">
+          <p class="card-text"> این پروژه تیمی انجام شده با استفاده از html , css , javascript , bootstrap انجام شده .</p>
+          <div class="d-flex justify-content-between  p-3 ">
             <span class=""><img class="calendar" src="./assets/img/calendar.png">
               12 فروردین 1399
             </span>
-            <span class="edame" href="#">ادامه مطلب <img class="arrow"
-                src="./assets/img/arrow-left.png"></span>
+            <a class="edame text-decoration-none text-white" href="./gallery1.html">ادامه مطلب <img class="arrow"
+                src="./assets/img/arrow-left.png"></a>
           </div>
 
         </div>
       </div>
-      <div class="card-article border-0 pt-4 shadow-lg" style="width: 22rem;">
+      <div class="card-article border-0 shadow-lg" style="width: 22rem;">
         <div class="card-thumbnail">
           <img src="./assets/img/Screenshot (2).png" class="img-article card-img-top   pb-2" alt="...">
         </div>
-        <div class="card-body-article text-white  p-3 mb-1">
+        <div class="card-body-article text-white p-3">
           <h5 class="card-title"> پروژه بوت استرپ</h5>
           <p class="card-text">این پروژه تنها با فریم ورک Bootstrap 5 انجام شده . </p>
 
-          <div class="d-flex justify-content-between p-3 mt-5">
+          <div class="d-flex justify-content-between p-3">
             <span class=""><img class="calendar" src="./assets/img/calendar.png">
               29 شهریور 1402 
             </span>
-            <span class="edame" href="#">ادامه مطلب <img class="arrow"
-                src="./assets/img/arrow-left.png"></span>
+            <a class="edame text-decoration-none text-white" href="#">ادامه مطلب <img class="arrow cursor-pointer"
+                src="./assets/img/arrow-left.png"></a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div id="form">
-    <form>
-      <div>
-        <div class="pt-4">
-          <div class="container-fluid  pb-3 px-4 py-3 d-block text-center " style="padding-left: 12px; ">
-            <h3 class="pb-2 text-white ">ارتباط با من </h3>
-            <h4 class="pb-1 display-3 fs-4 text-black-50 "><em> </em>
-            </h4>
-            <div class="row ">
-              <div class="col-md-6 col-sm-6 ">
-                <form>
-                  <div class="form-group justify-content-center ">
-                    <label for="inputName " style="color:white; "></label>
-                    <input type="text " class="form-control " id="inputName " placeholder="نام خود را وارد کنید.* ">
-                  </div>
-                  <div class="form-group justify-content-center ">
-                    <label for="inputEmail " style="color:white; "></label>
-                    <input type="email " class="form-control " id="inputEmail " aria-describedby="emailHelp "
-                      placeholder="ایمیل خود را وارد کنید.*">
-                  </div>
-                  <div class="form-group justify-content-center ">
-                    <label for="inputPhone " style="color:white; "></label>
-                    <input type="text " class="form-control " id="inputPhone "
-                      placeholder="شماره تلفن خود را وارد کنید.*">
-                  </div>
-                </form>
+  <!-- contact me -->
+  <!--------------- start main ------------>
+  <div class="container mt-3 w-100">
+    <!------------- start form_contact ------------->
+    <div class="row py-2 ps-3">
+      <div class="col-lg-7 rounded-1 p-2 mb-0">
+        <div class="form-contact d-flex pb-10 text-info">
+          <div class="me-2">
+            <img src="../assets/images/Group805(1).png" alt="">
+          </div>
+          <div> <b class="text-white text-align-end pt-sm-5">تماس با من </b>
+            <div class="d-flex">
+              <div class="line5-footer"></div>
+              <div class="line4-footer"></div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <form action="#">
+          <div class="row">
+            <div class="col-6 pb-10">
+              <div class="pb-3 pt-3">
+                <input type="text" placeholder="نام و نام خانوادگی (اختیاری)"
+                  class="w-100 border border-0 rounded-3 my-1 p-2" style="background-color: #F6F9FC; height: 40px;">
               </div>
-              <div class="col-md-6 col-sm-6 ">
-                <div class="form-group justify-content-center ">
-                  <label for="inputComment " style="color:white; "></label>
-                  <textarea class="form-control " id="inputComment " rows="6 " placeholder="پیامی بنویسید. "></textarea>
-                </div>
+              <div class="pb-3">
+                <input type="text" placeholder="ایمیل (اجباری)" class="w-100 p-2 border border-0 rounded-3 my-1"
+                  style="background-color: #F6F9FC; height: 40px;">
+              </div> <div class="pb-3">
+                <input type="text" placeholder="شماره تماس (اجباری)" class="w-100 p-2 border border-0 rounded-3 my-1"
+                  style="background-color: #F6F9FC; height: 40px;">
               </div>
             </div>
-
-            <br>
-            <div class=" text-center border-3 justify-content-center ">
-              <button type="submit " class="btn btn-outline-warning"><b>پیامتو بفرست </b></button>
+            <div class="col-6 pb-10">
+ 
+              <div>
+                <textarea type="text" placeholder="متن پیام خود را وارد کنید (اجباری)"
+                  class="border border-0 rounded-3 w-100 my-1 p-2"
+                  style="background-color: #F6F9FC; height: 200px;"></textarea>
+                  <div class=" text-end px-4 border-3 justify-content-end ">
+                    <button type="submit " class="btn btn-outline-secondary"><b>ارسال پیام </b></button>
+                  </div>
+              </div>
+            
             </div>
 
           </div>
+        </form>
+      </div><!--------- end of form_contact ------->
+      <div class="col-lg-5 text-white pt-md-5">
+        <div class="d-flex align-items-center">
+          <div class="d-flex position-relative">
+            <div class="rounded-circle d-flex justify-content-center align-items-center">
+              <img src="./assets/img/map.png" alt="" class="position-absolute">
+            </div>
 
+          </div>
+          <div class="text-start ms-2 p-2">
+            <b>آدرس من</b>
+            <p>خراسان جنوبی- بیرجند- خیابان غفاری- پارک علم و فناوری خراسان جنوبی</p>
+          </div>
+        </div>
+        <div class="d-flex align-items-center pb-10">
+          <div class="d-flex position-relative">
+            <div class="rounded-circle d-flex justify-content-center align-items-center">
+              <img src="./assets/img/sms.png" alt="" class="position-absolute">
+            </div>
+          </div>
+          <div class="text-start ms-2 py-2 px-2">
+            <b>ایمیل من</b>
+            <p>rahasdi80@gmail.com</p>
+          </div>
         </div>
       </div>
-    </form>
+    </div>
   </div>
-  <!-- end of contact me -->
+  </div>
+  </div>
   </div>
 </body>
 
