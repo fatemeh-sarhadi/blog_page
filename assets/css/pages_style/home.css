@@ -25,7 +25,9 @@ header {
 home css
 ---------------------------------------------------*/
 .home{
-    background-image: url(../../img/noisy_net.png);
+    background-image: url(../../img/bg.jpg);
+    background-size: cover;
+    height: 80vh;
  }
  .text-justify{
    text-align: justify;}
