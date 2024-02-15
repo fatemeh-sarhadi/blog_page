@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 15, 2024 at 08:51 AM
+-- Generation Time: Feb 15, 2024 at 09:01 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `personal-website`
+-- Database: `personal_website`
 --
 
 -- --------------------------------------------------------
@@ -95,6 +95,9 @@ CREATE TABLE `users` (
   `username` varchar(50) DEFAULT NULL,
   `email` varchar(100) DEFAULT NULL,
   `password` varchar(100) DEFAULT NULL,
+  `name` varchar(100) NOT NULL,
+  `resume` varchar(100) NOT NULL,
+  `job` varchar(100) NOT NULL,
   `registration_date` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -102,9 +105,9 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `email`, `password`, `registration_date`) VALUES
-(1, 'raha', 'rahasdi@gmail.com', 'raha8111', NULL),
-(2, 'Anahita', 'anahitanadi.99@gmail.com', 'ana8111', NULL);
+INSERT INTO `users` (`id`, `username`, `email`, `password`, `name`, `resume`, `job`, `registration_date`) VALUES
+(1, 'raha', 'rahasdi@gmail.com', 'raha8111', 'فاطمه سرحدی', '/blog_page/assets/pdf/resume.pdf', 'Web Developer', NULL),
+(2, 'Anahita', 'anahitanadi.99@gmail.com', 'ana8111', 'آناهیتا نادی', '', 'Web Developer', NULL);
 
 --
 -- Indexes for dumped tables
