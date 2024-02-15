@@ -2,21 +2,7 @@
 include( 'incs/init.php' );
 $users = get_users();
 ?>
-<!DOCTYPE html>
-<html lang="fa">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/pages_style/home.css">
-    <link rel="stylesheet" href="./assets/css/bootstrap-icons.css">
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/popper.min.js"></script>
-    <title>Home</title>
-</head>
+<?php  include './header.php' ?>
 
 <body>
     <!-- add header -->
@@ -73,7 +59,7 @@ $users = get_users();
         </div>
         <!-- /////////////////////end center -->
 
-        <!-- add footer -->
+        <!-- add footer --><?php include './footer.php' ?> 
     </div>
 </body>
 

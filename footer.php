@@ -1,20 +1,3 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./assets/css/pages_style/footer.css">
-    <link rel="stylesheet" href="./assets/css/bootstrap-icons.css">
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/popper.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
 
     <footer class="footer-main bg-dark fixed-bottom">
         <div class="container">

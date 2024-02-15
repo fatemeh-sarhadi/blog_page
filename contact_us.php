@@ -1,22 +1,5 @@
-<!DOCTYPE html>
-<html lang="fa">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./assets/css/pages_style/contact_us.css">
-    <link rel="stylesheet" href="./assets/javascript/javascript.js">
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css">
-    <script src="./assets/javascript/bootstrap.bundle.min.js"></script>
-    <script src="./assets/javascript/bootstrap.min.js"></script>
-    <title>contact page</title>
-
-</head>
-
-<body>
-    <div class="container">
+<?php include './header.php' ?>
+    <div class="container contact-us">
         <div class="row">
             <h1 style="color: white;">ارتباط با ما</h1>
             <h4 style="color: white; text-align:center">ما از اینکه ازت خبر داشته باشیم خوشحال میشویم</h4>
