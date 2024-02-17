@@ -1,9 +1,9 @@
 <?php include './header.php'  ?>
 
-<body>
 
-    <body>
-        <div class="background bg-dark">
+
+    
+        <div class="background login bg-dark">
             <div class="shape"></div>
             <div class="shape"></div>
         </div>

@@ -1,17 +1,17 @@
-
 /* header css ========================
 ================================================== */
-nav .container{
+nav .container {
   flex-direction: row-reverse;
 }
 
-.collapse ul li :hover{
-  color: #d7d7d7ab !important; 
+.collapse ul li :hover {
+  color: #d7d7d7ab !important;
   cursor: pointer;
 }
 
 header {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* سایه زیر هدر */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* سایه زیر هدر */
 
 }
 
@@ -24,57 +24,60 @@ header {
 /* ----------------------------
 home css
 ---------------------------------------------------*/
-.home{
-    background-image: url(../../img/bg.jpg);
-    background-size: cover;
-    height: 80vh;
- }
- .text-justify{
-   text-align: justify;}
- /* end */
+.home {
+  background-image: url(../../img/bg.jpg);
+  background-size: cover;
+  height: 80vh;
+}
 
- /* line do taraf darbare dngi */
- .line{
-   background-color: #0dcaf0;
-   width: 41px;
-   height: 4px;
-   border-radius: 11px;
-   margin-right: 8px;
-   margin-top: 10px;
- }
- 
- .line1 {
-   background-color: #0dcaf0;
-   width: 15px;
-   height: 4px;
-   border-radius: 11px;
-   margin-top: 10px;
-   margin-right: 10px;
- }
- 
- .line2{
-   background-color: #0dcaf0;
-   width: 41px;
-   height: 4px;
-   border-radius: 11px;
-   margin-top: 10px;
-   margin-left: 8px;
-   margin-right: 5px;
- }
- 
- .line3 {
-   background-color: #0dcaf0;
-   width: 15px;
-   height: 4px;
-   border-radius: 11px;
-   margin-left: 4px;
-   margin-top: 10px;
- }
- 
- 
- /* line samt rast */
- 
- /* ----------------------------
+.text-justify {
+  text-align: justify;
+}
+
+/* end */
+
+/* line do taraf darbare dngi */
+.line {
+  background-color: #0dcaf0;
+  width: 41px;
+  height: 4px;
+  border-radius: 11px;
+  margin-right: 8px;
+  margin-top: 10px;
+}
+
+.line1 {
+  background-color: #0dcaf0;
+  width: 15px;
+  height: 4px;
+  border-radius: 11px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.line2 {
+  background-color: #0dcaf0;
+  width: 41px;
+  height: 4px;
+  border-radius: 11px;
+  margin-top: 10px;
+  margin-left: 8px;
+  margin-right: 5px;
+}
+
+.line3 {
+  background-color: #0dcaf0;
+  width: 15px;
+  height: 4px;
+  border-radius: 11px;
+  margin-left: 4px;
+  margin-top: 10px;
+}
+
+
+/* line samt rast */
+
+/* ----------------------------
 home css
 ---------------------------------------------------*/
 
@@ -82,22 +85,20 @@ home css
 
 
 /* ================================
-       about css 
+       about1 css 
 */
 
 .line {
-  width: 685px;
-  height: 85px;
+  /* width: 685px; */
+  /* height: 85px; */
   top: 1171px;
   left: 357px;
   border-radius: 11px;
 }
 
 
-body {
-  background-image: url(../../img/ep_naturalblack.webp);
-  font-size: 16px;
-
+.about1 {
+background-image: url(../../img/ep_naturalblack.webp);
 }
 
 nav .container {
@@ -181,7 +182,7 @@ nav .container {
 
 /*  */
 .edame:hover {
- color: #FD7702 !important;
+  color: #FD7702 !important;
 }
 
 /* .my-portfolio{
@@ -203,13 +204,14 @@ background-image: url(../../img/ep_naturalblack.webp);
   cursor: pointer;
 }
 
-.edame:hover{
-color: #FD7702;
+.edame:hover {
+  color: #FD7702;
 }
+
 /* end  portfolio  */
 
 /* ================================
-    end about css 
+    end about1 css 
 */
 
 
@@ -222,11 +224,11 @@ footer css
 000000000000000000000000000000000000000000000000000000000*/
 
 
-.footer-main{
+.footer-main {
   padding-top: 90px;
 }
 
-.address-main > div.col-lg-4 {
+.address-main>div.col-lg-4 {
   border-bottom: 1px #999;
 }
 
@@ -235,9 +237,10 @@ footer css
   margin-bottom: 30px;
 }
 
-.add-content{
+.add-content {
   padding-left: 70px;
 }
+
 .add-content h5 {
   font-size: 17px;
   color: #ffffff;
@@ -245,21 +248,24 @@ footer css
   font-weight: 500;
   margin-bottom: 10px;
 }
+
 .add-content p {
   font-size: 13px;
   color: #999999;
   font-weight: 300;
 }
-.add-content p a{
+
+.add-content p a {
   font-size: 14px;
   color: #b1b1b1;
   font-weight: 300;
 
 }
 
-.add-content{
+.add-content {
   padding-left: 70px;
 }
+
 .add-content h5 {
   font-size: 17px;
   color: #ffffff;
@@ -267,23 +273,27 @@ footer css
   font-weight: 500;
   margin-bottom: 10px;
 }
+
 .add-content p {
   font-size: 13px;
   color: #ffffff;
   font-weight: 300;
 }
-.add-content p a{
+
+.add-content p a {
   font-size: 14px;
   color: #ffffff;
   font-weight: 300;
   word-wrap: break-word;
 }
-.add-content p a:hover{
+
+.add-content p a:hover {
   color: #ffb32d;
 }
+
 /* footer last */
-.Copyright{
-  background-color:#3434349e ;
+.Copyright {
+  background-color: #3434349e;
 }
 
 
@@ -438,5 +448,264 @@ input[type=checkbox]:checked+label {
 
 
 /* ////////////////////////////
-          contact us 
+         end contact us 
 /////////////////////////////////////////////////*/
+
+/* ///////////////////////////////////
+  about2 css
+                       ////////////////////////////////*/
+#sidebar {
+  width: 300px;
+  height: 100%;
+  background-image: url("../../img/ep_naturalblack.webp");
+  overflow-y: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.img-sidebar {
+  size: 100%;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-top: 50px;
+}
+
+.sidebar-logo ul li {
+  display: inline;
+  padding: 0px 10px;
+  font-size: 18px;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.p-sidebar {
+  padding: 20px;
+  justify-content: center;
+  align-content: center;
+}
+
+.menu ul li {
+  display: inline;
+  padding: 0 15px;
+  font-size: 14px;
+  flex-direction: column;
+}
+
+.menu ul li a {
+  color: white;
+  font-weight: 600;
+  flex-direction: column;
+}
+
+.menu ul i {
+  color: #3C54C0;
+}
+
+#main-content {
+  flex: 1;
+
+  overflow-y: auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.About {
+  display: flex;
+  padding: 50px;
+  height: 200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(249, 225, 242);
+}
+
+.p-About {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mx {
+  margin-right: 5px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .project-si {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    justify-content: center;
+    overflow-x: auto;
+
+  }
+}
+
+.card-s4sib {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  width: 100%;
+}
+
+.cap-s4sib {
+  margin-top: 20px;
+}
+
+.Read-more {
+  padding-inline-start: 148px;
+}
+
+.Read-more:hover {
+  color: #FD7702;
+}
+
+/* ///////////////////////////////////
+                      end about2 css
+                                           ////////////////////////////////*/
+
+
+                                           
+/* //////////////////////
+ login css
+================================= */
+
+.login {
+  background-image: url("../../img/ep_naturalblack.webp")!important;
+}
+
+
+.background {
+  width: 430px;
+  height: 520px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.background .shape {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.shape:first-child {
+  background: linear-gradient(#1845ad,
+          #23a2f6);
+  left: -80px;
+  top: -80px;
+}
+
+.shape:last-child {
+  background: linear-gradient(to right,
+          #ff512f,
+          #f09819);
+  right: -30px;
+  bottom: -80px;
+}
+
+form {
+  height: 520px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.13);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
+}
+
+form * {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+
+form h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+::placeholder {
+  color: #e5e5e5;
+}
+
+button {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.social {
+  margin-top: 30px;
+  display: flex;
+}
+
+.social div {
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255, 255, 255, 0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+
+.social div:hover {
+  background-color: rgba(255, 255, 255, 0.47);
+}
+
+.social .fb {
+  margin-left: 25px;
+}
+
+.social i {
+  margin-right: 4px;
+}
+
+/* //////////////////////
+end login css
+================================= */
