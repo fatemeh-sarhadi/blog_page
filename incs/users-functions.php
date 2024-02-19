@@ -7,7 +7,7 @@ function get_users(){
         "SELECT * FROM users"
     );
 
-    $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $users = $stmt->fetchAll(PDO::FETCH_OBJ);
     
     return $users;
 

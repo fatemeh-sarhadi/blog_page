@@ -1,5 +1,13 @@
 /* header css ========================
 ================================================== */
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 nav .container {
   flex-direction: row-reverse;
 }
@@ -25,7 +33,7 @@ header {
 home css
 ---------------------------------------------------*/
 .home {
-  background-image: url(../../img/bg.jpg);
+  background-color: #2d2d2d !important;
   background-size: cover;
   height: 80vh;
 }
@@ -98,7 +106,7 @@ home css
 
 
 .about1 {
-background-image: url(../../img/ep_naturalblack.webp);
+  background-image: url(../../img/ep_naturalblack.webp);
 }
 
 nav .container {
@@ -573,13 +581,13 @@ input[type=checkbox]:checked+label {
                                            ////////////////////////////////*/
 
 
-                                           
+
 /* //////////////////////
  login css
 ================================= */
 
 .login {
-  background-image: url("../../img/ep_naturalblack.webp")!important;
+  background-image: url("../../img/ep_naturalblack.webp") !important;
 }
 
 
@@ -601,15 +609,15 @@ input[type=checkbox]:checked+label {
 
 .shape:first-child {
   background: linear-gradient(#1845ad,
-          #23a2f6);
+      #23a2f6);
   left: -80px;
   top: -80px;
 }
 
 .shape:last-child {
   background: linear-gradient(to right,
-          #ff512f,
-          #f09819);
+      #ff512f,
+      #f09819);
   right: -30px;
   bottom: -80px;
 }
