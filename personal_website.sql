@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 15, 2024 at 09:01 AM
+-- Generation Time: Feb 19, 2024 at 07:17 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -98,16 +98,17 @@ CREATE TABLE `users` (
   `name` varchar(100) NOT NULL,
   `resume` varchar(100) NOT NULL,
   `job` varchar(100) NOT NULL,
-  `registration_date` date DEFAULT NULL
+  `registration_date` date DEFAULT NULL,
+  `img` char(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `email`, `password`, `name`, `resume`, `job`, `registration_date`) VALUES
-(1, 'raha', 'rahasdi@gmail.com', 'raha8111', 'فاطمه سرحدی', '/blog_page/assets/pdf/resume.pdf', 'Web Developer', NULL),
-(2, 'Anahita', 'anahitanadi.99@gmail.com', 'ana8111', 'آناهیتا نادی', '', 'Web Developer', NULL);
+INSERT INTO `users` (`id`, `username`, `email`, `password`, `name`, `resume`, `job`, `registration_date`, `img`) VALUES
+(1, 'raha', 'rahasdi@gmail.com', 'raha8111', 'فاطمه سرحدی', '/blog_page/assets/pdf/resume.pdf', 'Web Developer', NULL, 'assets/img/DSC3414.jpg'),
+(2, 'Anahita', 'anahitanadi.99@gmail.com', 'ana8111', 'آناهیتا نادی', '', 'Web Developer', NULL, 'assets/img/DSC3423.jpg');
 
 --
 -- Indexes for dumped tables
