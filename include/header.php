@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm bg-dark" id="mainNav">
+  <nav class="navbar navbar-expand-sm bg-dark shadow-lg" id="mainNav">
     <div class="container">
       <a href="">
         <button class="btn btn-outline-warning border-1 radius-4"> ورود</button>
