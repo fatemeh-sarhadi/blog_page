@@ -3,11 +3,11 @@ function get_users(){
     
     global $conn;
     
-    $usersStmt = $conn->query(
+    $stmt = $conn->query(
         "SELECT * FROM users"
     );
 
-    $users = $usersStmt->fetchAll(PDO::FETCH_ASSOC);
+    $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
     return $users;
 
