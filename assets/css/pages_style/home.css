@@ -316,6 +316,7 @@ end of footer css
           contact us 
 /////////////////////////////////////////////////*/
 
+/* 
 .contact-us {
   background-image: url(../../img/noisy_net.png);
   padding-top: 85px;
@@ -333,11 +334,11 @@ h4 {
   font-size: 20px;
   color: #9b9b9b;
   line-height: 1.5;
-}
+} */
 
 /* ///// inputs /////*/
 
-input:focus~label,
+/* input:focus~label,
 textarea:focus~label,
 input:valid~label,
 textarea:valid~label {
@@ -452,133 +453,13 @@ input[type=checkbox]:checked+label {
   color: #f00;
   font-style: normal;
 }
-
+ */
 
 
 /* ////////////////////////////
          end contact us 
 /////////////////////////////////////////////////*/
 
-/* ///////////////////////////////////
-  about2 css
-                       ////////////////////////////////*/
-#sidebar {
-  width: 300px;
-  height: 100%;
-  background-image: url("../../img/ep_naturalblack.webp");
-  overflow-y: auto;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-
-}
-
-.img-sidebar {
-  size: 100%;
-  width: 200px;
-  height: 200px;
-  border-radius: 20px;
-  justify-content: center !important;
-  align-items: center !important;
-  margin-top: 50px;
-}
-
-.sidebar-logo ul li {
-  display: inline;
-  padding: 0px 10px;
-  font-size: 18px;
-  justify-content: center !important;
-  align-items: center !important;
-}
-
-.p-sidebar {
-  padding: 20px;
-  justify-content: center;
-  align-content: center;
-}
-
-.menu ul li {
-  display: inline;
-  padding: 0 15px;
-  font-size: 14px;
-  flex-direction: column;
-}
-
-.menu ul li a {
-  color: white;
-  font-weight: 600;
-  flex-direction: column;
-}
-
-.menu ul i {
-  color: #3C54C0;
-}
-
-#main-content {
-  flex: 1;
-
-  overflow-y: auto;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.About {
-  display: flex;
-  padding: 50px;
-  height: 200px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(249, 225, 242);
-}
-
-.p-About {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mx {
-  margin-right: 5px !important;
-}
-
-@media only screen and (max-width: 600px) {
-  .project-si {
-    margin-bottom: 20px;
-    display: flex;
-    flex-wrap: nowrap;
-    text-align: center;
-    justify-content: center;
-    overflow-x: auto;
-
-  }
-}
-
-.card-s4sib {
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  margin-top: 18px;
-  width: 100%;
-}
-
-.cap-s4sib {
-  margin-top: 20px;
-}
-
-.Read-more {
-  padding-inline-start: 148px;
-}
-
-.Read-more:hover {
-  color: #FD7702;
-}
-
-/* ///////////////////////////////////
-                      end about2 css
-                                           ////////////////////////////////*/
 
 
 
