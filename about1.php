@@ -54,7 +54,7 @@
   <!-- portfolio  -->
 
   <div class="container-fluid my-portfolio mt-5 mb-3 ">
-    <div class="row">
+    <div class="row py-5 mx-5">
       <section class="mb-3 mt-4 mb-lg-0 col-12 col-lg-6">
         <div class="d-flex align-items-center">
           <span class="line5-footer "></span>
@@ -63,7 +63,7 @@
         </div>
       </section>
     </div>
-    <div class="text-center d-flex flex-wrap   justify-content-evenly">
+    <div class="text-center d-flex flex-wrap justify-content-evenly">
       <div class="card-article border-0 shadow-lg" style="width: 22rem;">
         <div class="card-thumbnail">
           <img src="./assets/img/Screenshot.png" class="img-article card-img-top pb-2" alt="...">
@@ -102,8 +102,7 @@
     </div>
   </div>
   <!-- contact me -->
-  <!--------------- start main ------------>
-  <div class="container mt-3 w-100">
+  
     <!------------- start form_contact ------------->
     <div class="row py-2 ps-3">
       <div class="col-lg-7 rounded-1 p-2 mb-0">
