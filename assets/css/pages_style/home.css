@@ -504,18 +504,8 @@ input[type=checkbox]:checked+label {
 }
 
 form {
-  height: 520px;
-  width: 400px;
-  background-color: rgba(255, 255, 255, 0.13);
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
+  width: 100%;
   border-radius: 10px;
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
-  padding: 50px 35px;
 }
 
 form * {
@@ -652,3 +642,75 @@ div.desc {
   border: 2px solid #FD7702;
   padding: 10px;
 }
+
+
+/*  */
+
+
+  
+  /***** start main ******/
+  p.text-start {
+    padding-top: 10px;
+  }
+  .btn-send {
+    width: 140px;
+    background-color: #10CE45;
+    color: white;
+    border-style: none;
+  }
+  .btn-send:hover{
+    background-color: white;
+    color: #10CE45;
+    border: 1px solid #10CE45;
+  }
+  .map img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+  }
+  .img-icon-map {
+    background-image: url(../../images/Ellipse36.png);
+    background-repeat: no-repeat;
+    width: 200px;
+  }
+  .text-bold{
+    font-weight: bold;
+  }
+  .bt {
+    border: 2px solid #FD7702;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    width: 200px;
+  }
+  .text-bold{
+    font-weight: bold;
+  }
+  a.about-btn{
+    gap: 5px;
+    border: 3px solid #FD7702;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  .about-btn:hover{
+    background-color: #e8a86f;
+    color: white;
+  }
+  .rounded-circle.d-flex.justify-content-center.align-items-center {
+    padding: 5px;
+    width: 48px;
+    height: 48px;
+    background: #feddc0;
+  }
+  .rounded-circle.d-flex.justify-content-center.align-items-center {
+    padding: 5px;
+    width: 48px;
+    height: 48px;
+    background: #feddc0;
+  }
+  .mb-0{
+    margin-bottom: 1px;
+  }

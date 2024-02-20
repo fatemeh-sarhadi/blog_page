@@ -6,7 +6,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-5 text-center mb-5 mb-sm-0">
-          <img class="img-fluid shadow-lg rounded-circle pt-5 pb-3" src="./assets/img/_DSC3414.JPG" title="I'm Fatemeh Sarhadi" alt="">
+          <img class="img-fluid shadow-lg rounded-circle pt-5 pb-3" src="./assets/img/DSC3414.JPG" title="I'm Fatemeh Sarhadi" alt="">
           <div class="media pt-4">
             <ul class="text-center " style="list-style-type: none; ">
               <li style="margin-right: 26px; ">
@@ -102,9 +102,11 @@
     </div>
   </div>
   <!-- contact me -->
-  
+  <!-- contact me -->
+  <!--------------- start main ------------>
+  <div class="container mt-3 w-100">
     <!------------- start form_contact ------------->
-    <div class="row py-2 ps-3">
+    <div class="row py-2 pb-5 ps-3">
       <div class="col-lg-7 rounded-1 p-2 mb-0">
         <div class="form-contact d-flex pb-10 text-info">
           <div class="me-2">
@@ -119,24 +121,62 @@
 
 
         </div>
-      </div>
-      <div class="row text-center text-white my-5">
-        <div class="col-md-6">
-          <div class="rounded-circle d-flex justify-content-center align-items-center">
-            <img src="./assets/img/sms.png" alt="" class="position-absolute">
+
+        <form action="#">
+          <div class="row">
+            <div class="col-6 pb-10">
+              <div class="pb-3 pt-3">
+                <input type="text" placeholder="نام و نام خانوادگی (اختیاری)"
+                  class="w-100 border border-0 rounded-3 my-1 p-2" style="background-color: #F6F9FC; height: 40px;">
+              </div>
+              <div class="pb-3">
+                <input type="text" placeholder="ایمیل (اجباری)" class="w-100 p-2 border border-0 rounded-3 my-1"
+                  style="background-color: #F6F9FC; height: 40px;">
+              </div>
+              <div class="pb-3">
+                <input type="text" placeholder="شماره تماس (اجباری)" class="w-100 p-2 border border-0 rounded-3 my-1"
+                  style="background-color: #F6F9FC; height: 40px;">
+              </div>
+            </div>
+            <div class="col-6 pb-10">
+
+              <div>
+                <textarea type="text" placeholder="متن پیام خود را وارد کنید (اجباری)"
+                  class="border border-0 rounded-3 w-100 my-1 p-2"
+                  style="background-color: #F6F9FC; height: 200px;"></textarea>
+                <div class=" text-start px-4 border-3 justify-content-center ">
+                  <button type="submit " class="btn btn-outline-secondary"><b>ارسال پیام </b></button>
+                </div>
+              </div>
+
+            </div>
+
           </div>
-          <h4 class="my-3">ایمیل من </h4>
-          <p>rahasdi80@gmail.com</p>
-          <p>fatemehsarhadi80@gmail.com</p>
+        </form>
+      </div><!--------- end of form_contact ------->
+      <div class="col-lg-5 text-white pt-md-5">
+        <div class="d-flex align-items-center">
+          <div class="d-flex position-relative">
+            <div class="rounded-circle d-flex justify-content-center align-items-center">
+              <img src="./assets/images/map.png" alt="" class="position-absolute">
+            </div>
+
+          </div>
+          <div class="text-end ms-2 p-2">
+            <b>آدرس من</b>
+            <p>خراسان جنوبی- بیرجند- خیابان غفاری- پارک علم و فناوری خراسان جنوبی</p>
+          </div>
         </div>
-
-        <div class="col-md-6">
-          <div class="rounded-circle d-flex justify-content-center align-items-center">
-            <img src="./assets/img/map.png" alt="" class="position-absolute">
+        <div class="d-flex align-items-center pb-10">
+          <div class="d-flex position-relative" style="width:60px; height: 60px;">
+            <div class="rounded-circle d-flex justify-content-center align-items-center">
+              <img src="./assets/images/sms.png" alt="" class="position-absolute">
+            </div>
           </div>
-          <h4 class="my-3">آدرس من </h4>
-          <p>خراسان جنوبی- بیرجند- خیابان غفاری- پارک علم و فناوری خراسان جنوبی</p>
-
+          <div class="text-end ms-2">
+            <b>ایمیل من</b>
+            <p>rahasdi80@gmail.com</p>
+          </div>
         </div>
       </div>
     </div>
