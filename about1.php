@@ -127,14 +127,14 @@
             <div class="col-6 pb-10">
               <div class="pb-3 pt-3">
                 <input type="text" placeholder="نام و نام خانوادگی (اختیاری)"
-                  class="w-100 border border-0 rounded-3 my-1 p-2" style="background-color: #F6F9FC; height: 40px;">
+                  class="w-100 border border-0 rounded-3 my-1 p-2 fw-bold" style="background-color: #F6F9FC; height: 40px;">
               </div>
               <div class="pb-3">
-                <input type="text" placeholder="ایمیل (اجباری)" class="w-100 p-2 border border-0 rounded-3 my-1"
+                <input type="text" placeholder="ایمیل (اجباری)" class="w-100 p-2 border border-0 rounded-3 my-1 fw-bold"
                   style="background-color: #F6F9FC; height: 40px;">
               </div>
               <div class="pb-3">
-                <input type="text" placeholder="شماره تماس (اجباری)" class="w-100 p-2 border border-0 rounded-3 my-1"
+                <input type="text" placeholder="شماره تماس (اجباری)" class="w-100 p-2 border border-0 rounded-3 my-1 fw-bold"
                   style="background-color: #F6F9FC; height: 40px;">
               </div>
             </div>
@@ -142,10 +142,10 @@
 
               <div>
                 <textarea type="text" placeholder="متن پیام خود را وارد کنید (اجباری)"
-                  class="border border-0 rounded-3 w-100 my-1 p-2"
+                  class="border border-0 rounded-3 w-100 my-1 p-2 fw-bold"
                   style="background-color: #F6F9FC; height: 200px;"></textarea>
                 <div class=" text-start px-4 border-3 justify-content-center ">
-                  <button type="submit " class="btn btn-outline-secondary"><b>ارسال پیام </b></button>
+                  <button type="submit " class="btn btn-outline-warning"><b>ارسال پیام </b></button>
                 </div>
               </div>
 
@@ -158,7 +158,7 @@
         <div class="d-flex align-items-center">
           <div class="d-flex position-relative">
             <div class="rounded-circle d-flex justify-content-center align-items-center">
-              <img src="./assets/images/map.png" alt="" class="position-absolute">
+              <img src="./assets/img/map.png" alt="" class="position-absolute">
             </div>
 
           </div>
@@ -170,7 +170,7 @@
         <div class="d-flex align-items-center pb-10">
           <div class="d-flex position-relative" style="width:60px; height: 60px;">
             <div class="rounded-circle d-flex justify-content-center align-items-center">
-              <img src="./assets/images/sms.png" alt="" class="position-absolute">
+              <img src="./assets/img/sms.png" alt="" class="position-absolute">
             </div>
           </div>
           <div class="text-end ms-2">
