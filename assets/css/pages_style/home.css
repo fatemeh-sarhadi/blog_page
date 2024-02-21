@@ -564,3 +564,29 @@ div.desc {
   .mb-0{
     margin-bottom: 1px;
   }
+
+    /***** start dashboard ******/
+
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {
+      height: 550px
+    }
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      float: right !important;
+      background-color: white;
+      height: 100vh;
+      padding-top: 20px;
+      font-size: 20px;
+      font-weight:bold;
+    }
+
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 767px) {
+      .row.content {
+        height: auto;
+      }
+    }
+  
