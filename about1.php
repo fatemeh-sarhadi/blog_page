@@ -20,6 +20,61 @@ if ($row = $result->fetch_assoc()) {
     echo "User not found.";
 }
 
+
+$slgeneral = "SELECT * FROM general_info WHERE id = ?";
+$stmt2 = $db->prepare($slgeneral);
+$stmt2->bind_param('i', $userId); // Bind the user ID as an integer
+$stmt2->execute();
+$result_info = $stmt2->get_result();
+
+if ($getrow = $result_info->fetch_assoc()) {
+} else {
+    echo "User not found.";
+}
+
+
+$slproject = "SELECT p.*
+FROM users AS u
+INNER JOIN portfolio_contributor AS pc ON u.id = pc.user_id
+INNER JOIN portfolio AS p ON pc.portfolio_id = p.id
+WHERE u.id = ?";
+
+$stmt3 = $db->prepare($slproject);
+$stmt3->bind_param('i', $userId); // Bind the user ID as an integer
+$stmt3->execute();
+$resultOfPro = $stmt3->get_result();
+
+if ($getPr = $resultOfPro->fetch_assoc()) {
+} else {
+    echo "User not found.";
+}
+
+/* 
+if ($resultOfPro) {
+    // Output data in a table format
+    echo "<table>";
+    echo "<tr>
+            <th>User ID</th>
+            <th>Resume Title</th>
+            <th>Resume Description</th>
+            <th>Language Name</th>
+            <th>Proficiency Level</th>
+          </tr>";
+
+    while ($rowPro = $resultOfPro->fetch_assoc()) {
+        echo "<tr>";
+        echo "<td>" . $rowPro['title'] . "</td>";
+        echo "</tr>";
+    }
+
+    echo "</table>";
+} else {
+    echo "No results found.";
+} */
+
+
+?>
+
 <div class="about1">
   <!-- About1
         ============================================= -->
