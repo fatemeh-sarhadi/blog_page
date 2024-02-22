@@ -139,7 +139,52 @@ if ($resultOfPro) {
         </div>
       </section>
     </div>
+    <?php 
+    
+    for($i = 0 ; $i<count($getPr); $i++)
+         echo $i;
+    ?> 
+
+<?php foreach ($getPr as $pr): ?>
     <div class="text-center d-flex flex-wrap justify-content-evenly">
+      <div class="card-article border-0 shadow-lg" style="width: 22rem;">
+        <div class="card-thumbnail">
+          <img src="./assets/img/Screenshot.png" class="img-article card-img-top pb-2" alt="...">
+        </div>
+
+        <div class="card-body-article text-white p-3">
+        <h5 class="card-title"> <?=  htmlspecialchars($pr['title']);?>
+          </h5>
+          <p class="card-text"> این پروژه تیمی انجام شده با استفاده از html , css , javascript , bootstrap انجام شده .
+          </p>
+          <div class="d-flex justify-content-between  p-3 ">
+            <span class=""><img class="calendar" src="./assets/img/calendar.png">
+              31 دی 1402
+            </span>
+            <a class="edame text-decoration-none text-white" href="./gallery1.html">ادامه مطلب <img class="arrow" src="./assets/img/arrow-left.png"></a>
+          </div>
+
+        </div>
+      </div>
+      <!--   <div class="card-article border-0 shadow-lg" style="width: 22rem;">
+        <div class="card-thumbnail">
+          <img src="./assets/img/Screenshot (2).png" class="img-article card-img-top   pb-2" alt="...">
+        </div>
+        <div class="card-body-article text-white p-3">
+          <h5 class="card-title"> پروژه بوت استرپ</h5>
+          <p class="card-text">این پروژه تنها با فریم ورک Bootstrap 5 انجام شده . </p>
+
+          <div class="d-flex justify-content-between p-3">
+            <span class=""><img class="calendar" src="./assets/img/calendar.png">
+              29 شهریور 1402
+            </span>
+            <a class="edame text-decoration-none text-white" href="#">ادامه مطلب <img class="arrow cursor-pointer" src="./assets/img/arrow-left.png"></a>
+          </div>
+        </div>
+      </div> -->
+    </div>
+<?php endforeach; ?>
+   <!--  <div class="text-center d-flex flex-wrap justify-content-evenly">
       <div class="card-article border-0 shadow-lg" style="width: 22rem;">
         <div class="card-thumbnail">
           <img src="./assets/img/Screenshot.png" class="img-article card-img-top pb-2" alt="...">
@@ -175,9 +220,11 @@ if ($resultOfPro) {
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
-  <!-- contact me -->
+
+
+
   <!-- contact me -->
   <!--------------- start main ------------>
   <div class="container mt-3 w-100">
