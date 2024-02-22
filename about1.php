@@ -150,13 +150,13 @@ if ($resultOfPro) {
           <div class="card-body-article text-white p-3">
             <h5 class="card-title"> <?= htmlspecialchars($pr['title']); ?>
             </h5>
-            <p class="card-text"> این پروژه تیمی انجام شده با استفاده از html , css , javascript , bootstrap انجام شده .
+            <p class="card-text"><?= $getrow[''] ?>
             </p>
             <div class="d-flex justify-content-between  p-3 ">
               <span class=""><img class="calendar" src="./assets/img/calendar.png">
                 31 دی 1402
               </span>
-              <a class="edame text-decoration-none text-white" href="./gallery1.html">ادامه مطلب <img class="arrow" src="./assets/img/arrow-left.png"></a>
+              <a class="edame text-decoration-none text-white" href="./gallery1.php">ادامه مطلب <img class="arrow" src="./assets/img/arrow-left.png"></a>
             </div>
 
           </div>
@@ -244,4 +244,4 @@ if ($resultOfPro) {
     </div>
   </div>
 </div>
-<?php include './include/footer.php' ?>
+<?php include 'footer.php' ?>
