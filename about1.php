@@ -1,4 +1,4 @@
-<?php include './include/header.php'; 
+<?php include './include/header.php';
 include './incs/db.php';
 
 ?>
@@ -17,7 +17,7 @@ $result = $stmt->get_result();
 
 if ($row = $result->fetch_assoc()) {
 } else {
-    echo "User not found.";
+  echo "User not found.";
 }
 
 
@@ -29,7 +29,7 @@ $result_info = $stmt2->get_result();
 
 if ($getrow = $result_info->fetch_assoc()) {
 } else {
-    echo "User not found.";
+  echo "User not found.";
 }
 
 
@@ -46,7 +46,7 @@ $resultOfPro = $stmt3->get_result();
 
 if ($getPr = $resultOfPro->fetch_assoc()) {
 } else {
-    echo "User not found.";
+  echo "User not found.";
 }
 
 /* 
@@ -139,88 +139,37 @@ if ($resultOfPro) {
         </div>
       </section>
     </div>
-    <?php 
+    <?php
+
+    for ($i = 0; $i < count($getPr); $i++)
+      echo $i;
+    ?>
+
+    <?php foreach ($getPr as $pr) : ?>
+      <div class="text-center d-flex flex-wrap justify-content-evenly">
+        <div class="card-article border-0 shadow-lg" style="width: 22rem;">
+          <div class="card-thumbnail">
+            <img src="./assets/img/Screenshot.png" class="img-article card-img-top pb-2" alt="...">
+          </div>
+
+          <div class="card-body-article text-white p-3">
+            <h5 class="card-title"> <?= htmlspecialchars($pr['title']); ?>
+            </h5>
+            <p class="card-text"> این پروژه تیمی انجام شده با استفاده از html , css , javascript , bootstrap انجام شده .
+            </p>
+            <div class="d-flex justify-content-between  p-3 ">
+              <span class=""><img class="calendar" src="./assets/img/calendar.png">
+                31 دی 1402
+              </span>
+              <a class="edame text-decoration-none text-white" href="./gallery1.html">ادامه مطلب <img class="arrow" src="./assets/img/arrow-left.png"></a>
+            </div>
+
+          </div>
+        </div>
+        
+      </div>
+    <?php endforeach; ?>
     
-    for($i = 0 ; $i<count($getPr); $i++)
-         echo $i;
-    ?> 
-
-<?php foreach ($getPr as $pr): ?>
-    <div class="text-center d-flex flex-wrap justify-content-evenly">
-      <div class="card-article border-0 shadow-lg" style="width: 22rem;">
-        <div class="card-thumbnail">
-          <img src="./assets/img/Screenshot.png" class="img-article card-img-top pb-2" alt="...">
-        </div>
-
-        <div class="card-body-article text-white p-3">
-        <h5 class="card-title"> <?=  htmlspecialchars($pr['title']);?>
-          </h5>
-          <p class="card-text"> این پروژه تیمی انجام شده با استفاده از html , css , javascript , bootstrap انجام شده .
-          </p>
-          <div class="d-flex justify-content-between  p-3 ">
-            <span class=""><img class="calendar" src="./assets/img/calendar.png">
-              31 دی 1402
-            </span>
-            <a class="edame text-decoration-none text-white" href="./gallery1.html">ادامه مطلب <img class="arrow" src="./assets/img/arrow-left.png"></a>
-          </div>
-
-        </div>
-      </div>
-      <!--   <div class="card-article border-0 shadow-lg" style="width: 22rem;">
-        <div class="card-thumbnail">
-          <img src="./assets/img/Screenshot (2).png" class="img-article card-img-top   pb-2" alt="...">
-        </div>
-        <div class="card-body-article text-white p-3">
-          <h5 class="card-title"> پروژه بوت استرپ</h5>
-          <p class="card-text">این پروژه تنها با فریم ورک Bootstrap 5 انجام شده . </p>
-
-          <div class="d-flex justify-content-between p-3">
-            <span class=""><img class="calendar" src="./assets/img/calendar.png">
-              29 شهریور 1402
-            </span>
-            <a class="edame text-decoration-none text-white" href="#">ادامه مطلب <img class="arrow cursor-pointer" src="./assets/img/arrow-left.png"></a>
-          </div>
-        </div>
-      </div> -->
-    </div>
-<?php endforeach; ?>
-   <!--  <div class="text-center d-flex flex-wrap justify-content-evenly">
-      <div class="card-article border-0 shadow-lg" style="width: 22rem;">
-        <div class="card-thumbnail">
-          <img src="./assets/img/Screenshot.png" class="img-article card-img-top pb-2" alt="...">
-        </div>
-
-        <div class="card-body-article text-white p-3">
-          <h5 class="card-title"> پروژه دنجی
-          </h5>
-          <p class="card-text"> این پروژه تیمی انجام شده با استفاده از html , css , javascript , bootstrap انجام شده .
-          </p>
-          <div class="d-flex justify-content-between  p-3 ">
-            <span class=""><img class="calendar" src="./assets/img/calendar.png">
-              31 دی 1402
-            </span>
-            <a class="edame text-decoration-none text-white" href="./gallery1.html">ادامه مطلب <img class="arrow" src="./assets/img/arrow-left.png"></a>
-          </div>
-
-        </div>
-      </div>
-      <div class="card-article border-0 shadow-lg" style="width: 22rem;">
-        <div class="card-thumbnail">
-          <img src="./assets/img/Screenshot (2).png" class="img-article card-img-top   pb-2" alt="...">
-        </div>
-        <div class="card-body-article text-white p-3">
-          <h5 class="card-title"> پروژه بوت استرپ</h5>
-          <p class="card-text">این پروژه تنها با فریم ورک Bootstrap 5 انجام شده . </p>
-
-          <div class="d-flex justify-content-between p-3">
-            <span class=""><img class="calendar" src="./assets/img/calendar.png">
-              29 شهریور 1402
-            </span>
-            <a class="edame text-decoration-none text-white" href="#">ادامه مطلب <img class="arrow cursor-pointer" src="./assets/img/arrow-left.png"></a>
-          </div>
-        </div>
-      </div>
-    </div> -->
   </div>
 
 
@@ -249,24 +198,19 @@ if ($resultOfPro) {
           <div class="row">
             <div class="col-6 pb-10">
               <div class="pb-3 pt-3">
-                <input type="text" placeholder="نام و نام خانوادگی (اختیاری)"
-                  class="w-100 border border-0 rounded-3 my-1 p-2 fw-bold" style="background-color: #F6F9FC; height: 40px;">
+                <input type="text" placeholder="نام و نام خانوادگی (اختیاری)" class="w-100 border border-0 rounded-3 my-1 p-2 fw-bold" style="background-color: #F6F9FC; height: 40px;">
               </div>
               <div class="pb-3">
-                <input type="text" placeholder="ایمیل (اجباری)" class="w-100 p-2 border border-0 rounded-3 my-1 fw-bold"
-                  style="background-color: #F6F9FC; height: 40px;">
+                <input type="text" placeholder="ایمیل (اجباری)" class="w-100 p-2 border border-0 rounded-3 my-1 fw-bold" style="background-color: #F6F9FC; height: 40px;">
               </div>
               <div class="pb-3">
-                <input type="text" placeholder="شماره تماس (اجباری)" class="w-100 p-2 border border-0 rounded-3 my-1 fw-bold"
-                  style="background-color: #F6F9FC; height: 40px;">
+                <input type="text" placeholder="شماره تماس (اجباری)" class="w-100 p-2 border border-0 rounded-3 my-1 fw-bold" style="background-color: #F6F9FC; height: 40px;">
               </div>
             </div>
             <div class="col-6 pb-10">
 
               <div>
-                <textarea type="text" placeholder="متن پیام خود را وارد کنید (اجباری)"
-                  class="border border-0 rounded-3 w-100 my-1 p-2 fw-bold"
-                  style="background-color: #F6F9FC; height: 200px;"></textarea>
+                <textarea type="text" placeholder="متن پیام خود را وارد کنید (اجباری)" class="border border-0 rounded-3 w-100 my-1 p-2 fw-bold" style="background-color: #F6F9FC; height: 200px;"></textarea>
                 <div class=" text-start px-4 border-3 justify-content-center ">
                   <button type="submit " class="btn btn-outline-warning"><b>ارسال پیام </b></button>
                 </div>
