@@ -82,18 +82,18 @@ if ($resultOfPro) {
     <div class="container">
       <div class="row">
         <div class="col-sm-5 text-center mb-5 mb-sm-0">
-          <img class="img-fluid shadow-lg rounded-circle pt-5 pb-3" src="./assets/img/DSC3414.JPG" title="I'm Fatemeh Sarhadi" alt="">
+          <img class="img-fluid shadow-lg rounded-circle pt-5 pb-3" src="<?= $row['img'] ?>" title="I'm Fatemeh Sarhadi" alt="">
           <div class="media pt-4">
             <ul class="text-center " style="list-style-type: none; ">
               <li style="margin-right: 26px; ">
-                <a class="cursor-pointer text-muted p-2" href="https://github.com/fatemeh-sarhadi">
+                <a class="cursor-pointer text-muted p-2" href="<?= $getrow['github'] ?>">
                   <img class="box" aria-posinset="relative " width="34px " height="32px " src="./assets/img/icons8-github.svg">
                 </a>
 
-                <a class="cursor-pointer text-muted p-2" href="https://www.linkedin.com/in/fatemeh-sarhadi/">
+                <a class="cursor-pointer text-muted p-2" href="<?= $getrow['linkedin'] ?>">
                   <img class="box " aria-posinset="relative " width="34px " height="32px " src="./assets/img/icons8-linkedin.svg">
                 </a>
-                <a class="cursor-pointer p-2" href="#">
+                <a class="cursor-pointer p-2" href="<?= $getrow['tel'] ?>">
                   <img class="box " aria-posinset="relative " width="34px " height="32px " src="./assets/img/icons8-telegram.svg">
                 </a>
 
@@ -109,15 +109,10 @@ if ($resultOfPro) {
             <div class="line4-footer"></div>
           </div>
           <!-- <h2 class="text-white text-align-start pt-sm-5">درباره من </h2> -->
-          <h3 class="text-6 text-light mb-4 pt-4"> <span class="text-info">من توسعه دهنده وب
-              هستم.</span></h3>
-          <p class="fs-3"> من یک توسعه دهنده وب هستم که علاقه زیادی به ایجاد وب سایت های جذاب و کاربر پسند
-            دارم. درحال
-            حاضر دانشجو رشته علوم کامپیوتر در دانشگاه صنعتی بیرجند هستم .</p>
-          <p class="fs-3">من دائماً در حال یادگیری و پیگیری آخرین روندهای توسعه وب هستم . فردی با انگیزه بالا
-            هستم که در
-            محیط سریع رشد می کنم</p>
-          <a href="./assets/pdf/resume.pdf" download>
+          <h3 class="text-6 text-light mb-4 pt-4"> <span class="text-info">   
+              <?= $row['name'] ?></span></h3>
+          <p class="fs-3"> <?= $getrow['about'] ?> </p>
+          <a href="<?= $users->resume ?>" download>
             <button class="btn btn-outline-warning"> دانلود رزومه </button>
             <a>
         </div>
