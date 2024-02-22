@@ -1,4 +1,25 @@
-<?php include './include/header.php' ?>
+<?php include './include/header.php'; 
+include './incs/db.php';
+
+?>
+
+
+<?php
+
+$userId = (int) filter_var($_GET['id'], FILTER_SANITIZE_NUMBER_INT);
+$db = new mysqli('localhost', 'root', '', 'personal_website');
+
+$sql = "SELECT * FROM users WHERE id = ?";
+$stmt = $db->prepare($sql);
+$stmt->bind_param('i', $userId); // Bind the user ID as an integer
+$stmt->execute();
+$result = $stmt->get_result();
+
+if ($row = $result->fetch_assoc()) {
+} else {
+    echo "User not found.";
+}
+
 <div class="about1">
   <!-- About1
         ============================================= -->
