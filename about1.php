@@ -237,7 +237,7 @@ if ($resultOfPro) {
           </div>
           <div class="text-end ms-2">
             <b>ایمیل من</b>
-            <p>rahasdi80@gmail.com</p>
+            <p><?= $getrow['email'] ?></p>
           </div>
         </div>
       </div>
