@@ -18,7 +18,7 @@
   <nav class="navbar navbar-expand-sm bg-dark shadow-lg" id="mainNav">
     <div class="container">
       <a href="../Login.php">
-        <button class="btn btn-outline-warning border-1 radius-4"> ورود</button>
+        <button class="btn btn-outline-warning border-0 radius-4"> ورود</button>
       <a>
           <button class="navbar-toggler border-0 navbar-dark" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"

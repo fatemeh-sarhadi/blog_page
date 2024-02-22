@@ -1,4 +1,4 @@
-<?php 
+<?php
 include './incs/db.php';
 include './incs/users-functions.php';
 $users = get_users();
@@ -41,21 +41,24 @@ include './include/header.php';
         </div>
         <div class=" container px-4 py-5 d-block text-center text-white">
             <div class="row justify-content-center d-flex ">
-               
-                <?php foreach($users as $user): ?>
-               <div class=" col-lg-4 ">
-                    <img src=<?php echo $user->img ?>  class=" bd-placeholder-img rounded-circle img-border " width=" 140 " height="
+
+                <?php foreach ($users as $user) : ?>
+                    <div class=" col-lg-4 ">
+                        <img src=<?php echo $user->img ?> class=" bd-placeholder-img rounded-circle img-border " width=" 140 " height="
                                                 140 " xmlns=" " role=" img " aria-label=" Placeholder:
                                                 140x140 " preserveAspectRatio=" xMidYMid slice " focusable=" false ">
-                    <h2><?php echo $user->name?></h2>
-                    <p><?php echo $user->job?></p>
-                    <a href="./about1.html"><button type="button" class="btn btn-outline-info"><b>رزومه من </b> </button></a>
-                </div>  
-                 <?php endforeach;?>
+                        <h2><?php echo $user->name ?></h2>
+                        <p><?php echo $user->job ?></p>
+                        <form action="about1.php?id=<?= $user->id ?>" method="post">
+                            <button type="submit" class="btn btn-outline-info"><b>رزومه من </b>
+                        </form>
+                        <a href=""></a>
+                    </div>
+                <?php endforeach; ?>
             </div>
         </div>
-      <!--  /////////////////////end center -->
-   <!-- add footer -->
-         
+        <!--  /////////////////////end center -->
+        <!-- add footer -->
+
     </div>
     <?php include './include/footer.php' ?>
