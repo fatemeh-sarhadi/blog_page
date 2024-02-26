@@ -49,8 +49,8 @@ include './include/header.php';
                                                 140x140 " preserveAspectRatio=" xMidYMid slice " focusable=" false ">
                         <h2><?php echo $user->name ?></h2>
                         <p><?php echo $user->job ?></p>
-                        <form action="about1.php?id=<?= $user->id ?>" method="post">
-                            <button type="submit" class="btn btn-outline-info"><b>رزومه من </b>
+                        <form action="about1.php?id=<?= $user->id ?>" method="POST">
+                            <button type="submit" class="btn btn-outline-info"><b>رزومه من </b> </button>
                         </form>
                         <a href=""></a>
                     </div>
