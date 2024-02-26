@@ -9,6 +9,7 @@ include './incs/db.php';
 $userId = (int) filter_var($_GET['id'], FILTER_SANITIZE_NUMBER_INT);
 $db = new mysqli('localhost', 'root', '', 'personal_website');
 
+/* get data from users */
 $sql = "SELECT * FROM users WHERE id = ?";
 $stmt = $db->prepare($sql);
 $stmt->bind_param('i', $userId); // Bind the user ID as an integer
@@ -21,6 +22,7 @@ if ($row = $result->fetch_assoc()) {
 }
 
 
+/* get data from general_info */
 $slgeneral = "SELECT * FROM general_info WHERE id = ?";
 $stmt2 = $db->prepare($slgeneral);
 $stmt2->bind_param('i', $userId); // Bind the user ID as an integer
@@ -33,51 +35,28 @@ if ($getrow = $result_info->fetch_assoc()) {
 }
 
 
-$slproject = "SELECT p.*
+/* get data from portfolio */
+$sqlpr = "SELECT p.*
 FROM users AS u
 INNER JOIN portfolio_contributor AS pc ON u.id = pc.user_id
 INNER JOIN portfolio AS p ON pc.portfolio_id = p.id
 WHERE u.id = ?";
 
-$stmt3 = $db->prepare($slproject);
-$stmt3->bind_param('i', $userId); // Bind the user ID as an integer
+$stmt3 = $db->prepare($sqlpr);
+$stmt3->bind_param("i", $userId);
 $stmt3->execute();
-$resultOfPro = $stmt3->get_result();
+$resultpr = $stmt3->get_result();
 
-if ($getPr = $resultOfPro->fetch_assoc()) {
+if ($resultpr->num_rows > 0) {
+  $rowPr = $resultpr;
 } else {
-  echo "User not found.";
+  echo "No projects found for user ID: " . $userId;
 }
-
-/* 
-if ($resultOfPro) {
-    // Output data in a table format
-    echo "<table>";
-    echo "<tr>
-            <th>User ID</th>
-            <th>Resume Title</th>
-            <th>Resume Description</th>
-            <th>Language Name</th>
-            <th>Proficiency Level</th>
-          </tr>";
-
-    while ($rowPro = $resultOfPro->fetch_assoc()) {
-        echo "<tr>";
-        echo "<td>" . $rowPro['title'] . "</td>";
-        echo "</tr>";
-    }
-
-    echo "</table>";
-} else {
-    echo "No results found.";
-} */
-
 
 ?>
 
 <div class="about1">
-  <!-- About1
-        ============================================= -->
+  <!-- About1 -->
   <section class="section about1 pt-5">
     <div class="container">
       <div class="row">
@@ -109,7 +88,7 @@ if ($resultOfPro) {
             <div class="line4-footer"></div>
           </div>
           <!-- <h2 class="text-white text-align-start pt-sm-5">درباره من </h2> -->
-          <h3 class="text-6 text-light mb-4 pt-4"> <span class="text-info">   
+          <h3 class="text-6 text-light mb-4 pt-4"> <span class="text-info">
               <?= $row['name'] ?></span></h3>
           <p class="fs-3"> <?= $getrow['about'] ?> </p>
           <a href="<?= $users->resume ?>" download>
@@ -134,37 +113,32 @@ if ($resultOfPro) {
         </div>
       </section>
     </div>
-    <?php
 
-    for ($i = 0; $i < count($getPr); $i++)
-      echo $i;
-    ?>
 
-    <?php foreach ($getPr as $pr) : ?>
-      <div class="text-center d-flex flex-wrap justify-content-evenly">
+    <div class="text-center d-flex flex-wrap justify-content-evenly">
+      <?php foreach ($rowPr as $pr) : ?>
         <div class="card-article border-0 shadow-lg" style="width: 22rem;">
           <div class="card-thumbnail">
-            <img src="./assets/img/Screenshot.png" class="img-article card-img-top pb-2" alt="...">
+            <img src=" <?= $pr['project_link'] ?>" class="img-article card-img-top pb-2" alt="...">
           </div>
 
           <div class="card-body-article text-white p-3">
-            <h5 class="card-title"> <?= htmlspecialchars($pr['title']); ?>
+            <h5 class="card-title">
+              <?= $pr['title'] ?>
             </h5>
-            <p class="card-text"><?= $getrow[''] ?>
+            <p class="card-text"> <?= $pr['description'] ?>
             </p>
             <div class="d-flex justify-content-between  p-3 ">
               <span class=""><img class="calendar" src="./assets/img/calendar.png">
                 31 دی 1402
               </span>
-              <a class="edame text-decoration-none text-white" href="./gallery1.php">ادامه مطلب <img class="arrow" src="./assets/img/arrow-left.png"></a>
+              <a class="edame text-decoration-none text-white" href="gallery.php?id=<?= $pr['id'] ?>">ادامه مطلب <img class="arrow" src="./assets/img/arrow-left.png"></a>
             </div>
 
           </div>
         </div>
-        
-      </div>
-    <?php endforeach; ?>
-    
+      <?php endforeach; ?>
+    </div>
   </div>
 
 
@@ -185,8 +159,6 @@ if ($resultOfPro) {
               <div class="line4-footer"></div>
             </div>
           </div>
-
-
         </div>
 
         <form action="#">
@@ -226,7 +198,7 @@ if ($resultOfPro) {
           </div>
           <div class="text-end ms-2 p-2">
             <b>آدرس من</b>
-            <p>خراسان جنوبی- بیرجند- خیابان غفاری- پارک علم و فناوری خراسان جنوبی</p>
+            <p><?= $getrow["addres"] ?></p>
           </div>
         </div>
         <div class="d-flex align-items-center pb-10">
@@ -237,7 +209,7 @@ if ($resultOfPro) {
           </div>
           <div class="text-end ms-2">
             <b>ایمیل من</b>
-            <p><?= $getrow['email'] ?></p>
+            <p><?= $row["email"]?></p>
           </div>
         </div>
       </div>
