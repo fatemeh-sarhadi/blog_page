@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<?php  
+include "./include/header.php";
+include './incs/db.php';
+include './include/admin.php'
+?>
 
-<head>
-  <title>Dashboard</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./assets/css/pages_style/home.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-</head>
-
-<body>
   <div class="container-fluid">
     <div class="row content">
       <div class="col-sm-3 sidenav hidden-xs ">
@@ -60,6 +51,8 @@
       </div>
     </div>
   </div>
-</body>
 
-</html>
+
+  <?php
+  include "./include/footer.php"
+  ?> 
