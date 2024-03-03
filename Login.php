@@ -1,4 +1,4 @@
-<?php include './header.php'  ?>
+<?php include './include/header.php'  ?>
 
     
         <div class="background login bg-dark">
@@ -17,4 +17,4 @@
             <button type="submit" value="send" class="">ورود</button>
         </form>
 
-        <?php include './footer.php' ?>
+        <?php include './include/footer.php' ?>

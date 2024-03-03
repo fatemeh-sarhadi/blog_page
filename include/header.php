@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/pages_style/home.css">
+  <link rel="stylesheet" href="../assets/css/pages_style/home.css">
   <link rel="stylesheet" href="./assets/css/bootstrap-icons.css">
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
@@ -17,7 +17,7 @@
 <body>
   <nav class="navbar navbar-expand-sm bg-dark shadow-lg" id="mainNav">
     <div class="container">
-      <a href="../Login.php">
+      <a href="/blog_page/login.php">
         <button class="btn btn-outline-warning border-0 radius-4"> ورود</button>
       <a>
           <button class="navbar-toggler border-0 navbar-dark" type="button" data-bs-toggle="collapse"
