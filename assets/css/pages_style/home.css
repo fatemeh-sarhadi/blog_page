@@ -1,6 +1,6 @@
-/* header css ========================
-================================================== */
-
+/* ----------------------------
+          header css
+------------------------------*/
 
 * {
   padding: 0;
@@ -23,13 +23,14 @@ header {
 
 }
 
+/* ----------------------------
+          end header css
+------------------------------*/
 
-/*end header css ========================
-================================================== */
 
 /* ----------------------------
-home css
----------------------------------------------------*/
+          home css
+------------------------------*/
 .home {
   background-color: #2d2d2d !important;
   background-size: cover;
@@ -222,8 +223,8 @@ background-image: url(../../img/ep_naturalblack.webp);
 
 
 ::placeholder {
-  color:#b0b0b0 !important;
-  
+  color: #b0b0b0 !important;
+
 }
 
 
@@ -497,96 +498,107 @@ div.desc {
 /*  */
 
 
-  
-  /***** start main ******/
-  p.text-start {
-    padding-top: 10px;
-  }
-  .btn-send {
-    width: 140px;
-    background-color: #10CE45;
-    color: white;
-    border-style: none;
-  }
-  .btn-send:hover{
-    background-color: white;
-    color: #10CE45;
-    border: 1px solid #10CE45;
-  }
-  .map img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  
-  }
-  .img-icon-map {
-    background-image: url(../../images/Ellipse36.png);
-    background-repeat: no-repeat;
-    width: 200px;
-  }
-  .text-bold{
-    font-weight: bold;
-  }
-  .bt {
-    border: 2px solid #FD7702;
-    border-radius: 8px;
-    background-color: white;
-    color: black;
-    width: 200px;
-  }
-  .text-bold{
-    font-weight: bold;
-  }
-  a.about-btn{
-    gap: 5px;
-    border: 3px solid #FD7702;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    margin-right: 5px;
-  }
-  .about-btn:hover{
-    background-color: #e8a86f;
-    color: white;
-  }
-  .rounded-circle.d-flex.justify-content-center.align-items-center {
-    padding: 5px;
-    width: 48px;
-    height: 48px;
-    background: #feddc0;
-  }
-  .rounded-circle.d-flex.justify-content-center.align-items-center {
-    padding: 5px;
-    width: 48px;
-    height: 48px;
-    background: #feddc0;
-  }
-  .mb-0{
-    margin-bottom: 1px;
-  }
 
-    /***** start dashboard ******/
+/***** start main ******/
+p.text-start {
+  padding-top: 10px;
+}
+
+.btn-send {
+  width: 140px;
+  background-color: #10CE45;
+  color: white;
+  border-style: none;
+}
+
+.btn-send:hover {
+  background-color: white;
+  color: #10CE45;
+  border: 1px solid #10CE45;
+}
+
+.map img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.img-icon-map {
+  background-image: url(../../images/Ellipse36.png);
+  background-repeat: no-repeat;
+  width: 200px;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.bt {
+  border: 2px solid #FD7702;
+  border-radius: 8px;
+  background-color: white;
+  color: black;
+  width: 200px;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+a.about-btn {
+  gap: 5px;
+  border: 3px solid #FD7702;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.about-btn:hover {
+  background-color: #e8a86f;
+  color: white;
+}
+
+.rounded-circle.d-flex.justify-content-center.align-items-center {
+  padding: 5px;
+  width: 48px;
+  height: 48px;
+  background: #feddc0;
+}
+
+.rounded-circle.d-flex.justify-content-center.align-items-center {
+  padding: 5px;
+  width: 48px;
+  height: 48px;
+  background: #feddc0;
+}
+
+.mb-0 {
+  margin-bottom: 1px;
+}
+
+/***** start dashboard ******/
 
 
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {
-      height: 550px
-    }
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+  height: 550px
+}
 
-    /* Set gray background color and 100% height */
-    .sidenav {
-      float: right !important;
-      background-color: white;
-      height: 100vh;
-      padding-top: 20px;
-      font-size: 20px;
-      font-weight:bold;
-    }
+/* Set gray background color and 100% height */
+.sidenav {
+  float: right !important;
+  background-color: white;
+  height: 100vh;
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
 
-    /* On small screens, set height to 'auto' for the grid */
-    @media screen and (max-width: 767px) {
-      .row.content {
-        height: auto;
-      }
-    }
-  
+/* On small screens, set height to 'auto' for the grid */
+@media screen and (max-width: 767px) {
+  .row.content {
+    height: auto;
+  }
+}
