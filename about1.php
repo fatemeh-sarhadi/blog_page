@@ -61,7 +61,7 @@ if ($resultpr->num_rows > 0) {
     <div class="container">
       <div class="row">
         <div class="col-sm-5 text-center mb-5 mb-sm-0">
-          <img class="img-fluid shadow-lg rounded-circle pt-5 pb-3" src="<?= $row['img'] ?>" title="I'm Fatemeh Sarhadi" alt="">
+          <img class="img-fluid shadow-lg pt-5 pb-3" src="<?= $row['img'] ?>" title="I'm Fatemeh Sarhadi" alt="">
           <div class="media pt-4">
             <ul class="text-center " style="list-style-type: none; ">
               <li style="margin-right: 26px; ">
