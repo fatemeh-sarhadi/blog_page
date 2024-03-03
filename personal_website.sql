@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 22, 2024 at 09:16 AM
+-- Generation Time: Mar 03, 2024 at 07:11 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -27,6 +27,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `contact_us`
 --
 
+DROP TABLE IF EXISTS `contact_us`;
 CREATE TABLE `contact_us` (
   `id` int(11) NOT NULL,
   `user_name` int(11) NOT NULL,
@@ -42,6 +43,7 @@ CREATE TABLE `contact_us` (
 -- Table structure for table `galleries`
 --
 
+DROP TABLE IF EXISTS `galleries`;
 CREATE TABLE `galleries` (
   `id` int(11) NOT NULL,
   `link` varchar(150) NOT NULL,
@@ -117,6 +119,7 @@ INSERT INTO `galleries` (`id`, `link`, `portfolio_id`, `caption`) VALUES
 -- Table structure for table `general_info`
 --
 
+DROP TABLE IF EXISTS `general_info`;
 CREATE TABLE `general_info` (
   `id` int(11) NOT NULL,
   `mobail` varchar(20) NOT NULL,
@@ -142,6 +145,7 @@ INSERT INTO `general_info` (`id`, `mobail`, `tel`, `email`, `addres`, `about`, `
 -- Table structure for table `languages`
 --
 
+DROP TABLE IF EXISTS `languages`;
 CREATE TABLE `languages` (
   `id` int(11) NOT NULL,
   `title` varchar(15) NOT NULL
@@ -167,6 +171,7 @@ INSERT INTO `languages` (`id`, `title`) VALUES
 -- Table structure for table `portfolio`
 --
 
+DROP TABLE IF EXISTS `portfolio`;
 CREATE TABLE `portfolio` (
   `id` int(11) NOT NULL,
   `title` varchar(20) NOT NULL,
@@ -190,6 +195,7 @@ INSERT INTO `portfolio` (`id`, `title`, `project_link`, `description`) VALUES
 -- Table structure for table `portfolio_contributor`
 --
 
+DROP TABLE IF EXISTS `portfolio_contributor`;
 CREATE TABLE `portfolio_contributor` (
   `id` int(11) NOT NULL,
   `portfolio_id` int(11) NOT NULL,
@@ -212,6 +218,7 @@ INSERT INTO `portfolio_contributor` (`id`, `portfolio_id`, `user_id`) VALUES
 -- Table structure for table `portfolio_languages`
 --
 
+DROP TABLE IF EXISTS `portfolio_languages`;
 CREATE TABLE `portfolio_languages` (
   `id` int(11) NOT NULL,
   `portfolio_id` int(11) NOT NULL,
@@ -238,6 +245,7 @@ INSERT INTO `portfolio_languages` (`id`, `portfolio_id`, `language_id`) VALUES
 -- Table structure for table `users`
 --
 
+DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `username` varchar(50) DEFAULT NULL,
