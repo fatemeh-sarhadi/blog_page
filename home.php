@@ -44,7 +44,7 @@ include './include/header.php';
 
                 <?php foreach ($users as $user) : ?>
                     <div class=" col-lg-4 ">
-                        <img src=<?php echo $user->img ?> class=" bd-placeholder-img rounded-circle img-border " width=" 140 " height="
+                        <img src=<?php echo $user->img ?> class=" bd-placeholder-img img-border " width="  " height="
                                                 140 " xmlns=" " role=" img " aria-label=" Placeholder:
                                                 140x140 " preserveAspectRatio=" xMidYMid slice " focusable=" false ">
                         <h2><?php echo $user->name ?></h2>
