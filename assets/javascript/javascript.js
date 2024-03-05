@@ -4,3 +4,5 @@ document.querySelector('#contact-form').addEventListener('submit', (e) => {
     e.target.elements.email.value = '';
     e.target.elements.message.value = '';
   });
+
+  

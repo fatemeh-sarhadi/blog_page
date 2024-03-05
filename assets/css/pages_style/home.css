@@ -33,17 +33,15 @@ header {
 ------------------------------*/
 .home {
   background-color: #2d2d2d !important;
-  background-size: cover;
-  height: 80vh;
+  height: auto !important;
 }
 
 .text-justify {
   text-align: justify;
 }
 
-/* end */
 
-/* line do taraf darbare dngi */
+/* line do taraf darbare ma */
 .line {
   background-color: #0dcaf0;
   width: 41px;
@@ -81,23 +79,17 @@ header {
   margin-top: 10px;
 }
 
+/* ----------------------------
+         end home css
+------------------------------*/
 
-/* line samt rast */
+
 
 /* ----------------------------
-home css
----------------------------------------------------*/
-
-
-
-
-/* ================================
-       about1 css 
-*/
+          about1 css
+------------------------------*/
 
 .line {
-  /* width: 685px; */
-  /* height: 85px; */
   top: 1171px;
   left: 357px;
   border-radius: 11px;
@@ -154,13 +146,8 @@ nav .container {
 }
 
 /* portfolio  */
-/* card article------------------ */
 
-/****** start of postcard section*********/
-
-
-
-
+/** start of postcard section**/
 
 .img-article:hover {
   transform: scale(1.2);
@@ -178,23 +165,17 @@ nav .container {
 }
 
 
-/****** end of postcard section ********/
+/** end of postcard section **/
 
 .card-body-article {
   /* card body text */
   text-align: justify;
 }
 
-/* ************************************ */
 
-/*  */
 .edame:hover {
   color: #FD7702 !important;
 }
-
-/* .my-portfolio{
-background-image: url(../../img/ep_naturalblack.webp);
-} */
 
 .card-article {
   margin-bottom: 25px;
@@ -217,9 +198,9 @@ background-image: url(../../img/ep_naturalblack.webp);
 
 /* end  portfolio  */
 
-/* ================================
-    end about1 css 
-*/
+/* ----------------------------
+          end about1 css
+------------------------------*/
 
 
 ::placeholder {
@@ -228,15 +209,12 @@ background-image: url(../../img/ep_naturalblack.webp);
 }
 
 
-
-
-/* 00000000000000000000000000
-footer css 
-000000000000000000000000000000000000000000000000000000000*/
-
+/* ----------------------------
+          footer css
+------------------------------*/
 
 .footer-main {
-  padding-top: 90px;
+  padding-top: 100px;
 }
 
 .address-main>div.col-lg-4 {
@@ -307,21 +285,19 @@ footer css
   background-color: #3434349e;
 }
 
-
-/* 00000000000000000000000000
-end of footer css 
-000000000000000000000000000000000000000000000000000000000*/
-
+/* ----------------------------
+         end footer css
+------------------------------*/
 
 
-/* //////////////////////
- login css
-================================= */
+
+/* ----------------------------
+          login css
+------------------------------*/
 
 .login {
   background-image: url("../../img/ep_naturalblack.webp") !important;
 }
-
 
 .background {
   width: 430px;
@@ -436,11 +412,15 @@ button {
   margin-right: 4px;
 }
 
-/* //////////////////////
-end login css
-================================= */
+/* ----------------------------
+         end login css
+------------------------------*/
 
-/* gallery css */
+
+/* ----------------------------
+        gallery css
+------------------------------*/
+
 div.gallery {
   border: 2px solid #ccc;
 }
@@ -493,10 +473,9 @@ div.desc {
   border: 2px solid #FD7702;
   padding: 10px;
 }
-
-
-/*  */
-
+/* ----------------------------
+       end gallery css
+------------------------------*/
 
 
 /***** start main ******/
@@ -578,9 +557,11 @@ a.about-btn {
   margin-bottom: 1px;
 }
 
-/***** start dashboard ******/
 
 
+/* ----------------------------
+       dashboard css
+------------------------------*/
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row.content {
   height: 550px
@@ -602,3 +583,11 @@ a.about-btn {
     height: auto;
   }
 }
+/* ----------------------------
+       end dashboard css
+------------------------------*/
+
+
+/* ----------------------------
+          edit page css
+------------------------------*/

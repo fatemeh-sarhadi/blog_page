@@ -14,7 +14,7 @@ include './include/header.php';
     <!-- center -->
 
     <div class="home bg-dark container-fluid">
-        <div class="row main4-f pt-3 mb-3 backgrand text-center d-flex align-items-center justify-content-center">
+        <div class="row main4-f pt-5 mb-3 text-center d-flex align-items-center justify-content-center">
             <div class=" text-center d-flex align-items-center justify-content-center">
                 <div class="linere d-flex justify-content-center align-items-center">
                     <span class="line1">
@@ -39,13 +39,13 @@ include './include/header.php';
                     یاد بگیریم" </b>
             </div>
         </div>
-        <div class=" container px-4 py-5 d-block text-center text-white">
+        <div class="container-fluid px-4 py-5 d-block text-center text-white">
             <div class="row justify-content-center d-flex ">
 
                 <?php foreach ($users as $user) : ?>
                     <div class=" col-lg-4 ">
-                        <img src=<?php echo $user->img ?> class=" bd-placeholder-img img-border " width="  " height="
-                                                140 " xmlns=" " role=" img " aria-label=" Placeholder:
+                        <img src=<?php echo $user->img ?> class=" bd-placeholder-img img-border " width=" " height="
+                                                300px " xmlns=" " role=" img " aria-label=" Placeholder:
                                                 140x140 " preserveAspectRatio=" xMidYMid slice " focusable=" false ">
                         <h2><?php echo $user->name ?></h2>
                         <p><?php echo $user->job ?></p>
@@ -57,7 +57,7 @@ include './include/header.php';
                 <?php endforeach; ?>
             </div>
         </div>
-        <!--  /////////////////////end center -->
+        <!--------end center -------->
         <!-- add footer -->
 
     </div>
