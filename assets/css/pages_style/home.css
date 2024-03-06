@@ -473,6 +473,7 @@ div.desc {
   border: 2px solid #FD7702;
   padding: 10px;
 }
+
 /* ----------------------------
        end gallery css
 ------------------------------*/
@@ -583,6 +584,7 @@ a.about-btn {
     height: auto;
   }
 }
+
 /* ----------------------------
        end dashboard css
 ------------------------------*/
@@ -591,3 +593,85 @@ a.about-btn {
 /* ----------------------------
           edit page css
 ------------------------------*/
+.edit-page{
+  background-image: url("../../img/image17.png");
+  background-size: 200px;
+  background-repeat: repeat;
+}
+.img-user {
+  height: 200px;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.box-jose2 {
+  background-color: rgb(203, 203, 203);
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #0e0e0e;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  background-color: #F6F9FC !important;
+}
+label{
+  color:#080710;
+}
+select {
+  background-color: #F6F9FC !important;
+}
+
+textarea {
+  background-color: #F6F9FC !important;
+}
+
+input[type="radio"] {
+  /* remove standard background appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+  cursor: pointer;
+  /* background-color only for content */
+  border: 1px solid #737373;
+  background-color: #ffffff;
+  border-radius: 50%;
+
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]:checked {
+  background-color: #10CE45 !important;
+}
+
+/* optional styles, I'm using this for centering radiobuttons */
+.flex {
+  display: flex;
+  align-items: center;
+
+}
+
+.btn1 {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #FD7702;
+  font-style: #FD7702;
+  width: 163.81px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: #FD7702;
+
+}
+
+.p-jose2 {
+  color: #625F5F;
+}
