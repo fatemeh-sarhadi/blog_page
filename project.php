@@ -2,7 +2,6 @@
 include './include/header.php';
 ?>
 
-
 <div class="container dashboard p-5">
     <h1>Project Management</h1>
     <table class="table">
