@@ -216,4 +216,4 @@ if ($resultpr->num_rows > 0) {
     </div>
   </div>
 </div>
-<?php include 'footer.php' ?>
+<?php include './include/footer.php' ?>
