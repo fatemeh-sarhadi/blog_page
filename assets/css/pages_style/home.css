@@ -593,6 +593,7 @@ a.about-btn {
 /* ----------------------------
           edit page css
 ------------------------------*/
+<<<<<<< HEAD
 .edit-page{
   background-image: url("../../img/image17.png");
   background-size: 200px;
@@ -675,3 +676,9 @@ input[type="radio"]:checked {
 .p-jose2 {
   color: #625F5F;
 }
+=======
+
+button.dashboard {
+  margin: 5px;
+}
+>>>>>>> bfb2b38 (add dashboard page)

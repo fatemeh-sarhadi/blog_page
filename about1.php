@@ -16,7 +16,7 @@ $stmt->bind_param('i', $userId); // Bind the user ID as an integer
 $stmt->execute();
 $result = $stmt->get_result();
 
-if ($row = $result->fetch_assoc()) {
+if ($user = $result->fetch_assoc()) {
 } else {
   echo "User not found.";
 }
@@ -52,7 +52,7 @@ if ($resultpr->num_rows > 0) {
 } else {
   echo "No projects found for user ID: " . $userId;
 }
-
+// print_r($row);exit;
 ?>
 
 <div class="about1">
@@ -61,7 +61,7 @@ if ($resultpr->num_rows > 0) {
     <div class="container">
       <div class="row">
         <div class="col-sm-5 text-center mb-5 mb-sm-0">
-          <img class="img-fluid shadow-lg pt-5 pb-3" src="<?= $row['img'] ?>" title="I'm Fatemeh Sarhadi" alt="">
+          <img class="img-fluid shadow-lg pt-5 pb-3" src="<?= $user['img'] ?>" title="I'm Fatemeh Sarhadi" alt="">
           <div class="media pt-4">
             <ul class="text-center " style="list-style-type: none; ">
               <li style="margin-right: 26px; ">
@@ -89,9 +89,9 @@ if ($resultpr->num_rows > 0) {
           </div>
           <!-- <h2 class="text-white text-align-start pt-sm-5">درباره من </h2> -->
           <h3 class="text-6 text-light mb-4 pt-4"> <span class="text-info">
-              <?= $row['name'] ?></span></h3>
+              <?= $user['name'] ?></span></h3>
           <p class="fs-3"> <?= $getrow['about'] ?> </p>
-          <a href="<?= $users->resume ?>" download>
+          <a href="<?= $user['resume']?>" download>
             <button class="btn btn-outline-warning"> دانلود رزومه </button>
             <a>
         </div>
@@ -209,11 +209,12 @@ if ($resultpr->num_rows > 0) {
           </div>
           <div class="text-end ms-2">
             <b>ایمیل من</b>
-            <p><?= $row["email"]?></p>
+            <p><?= $user["email"]?></p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<?php include './include/footer.php' ?>
+
+<?php include 'footer.php' ?>
