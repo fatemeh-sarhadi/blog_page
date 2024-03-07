@@ -8,7 +8,7 @@ include './incs/db.php';
 
 session_start();
 if (isset($_SESSION['user_id'])) {
-    header('location: http://localhost/blog_page/Dashboard.php');
+    header('location: http://localhost/blog_page\admin\Dashboard.php');
     exit;
 }
 
@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($select->rowCount() > 0) {
         $user = $select->fetch(PDO::FETCH_OBJ);
         $_SESSION['user_id'] = $user->id;
-        header('location: http://localhost/blog_page/Dashboard.php');
+        header('location: http://localhost/blog_page\admin\Dashboard.php');
         exit;
     } else {
         header('location: http://localhost/blog_page/login.php?status=loginfailed');
