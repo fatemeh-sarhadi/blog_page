@@ -161,23 +161,23 @@ if ($resultpr->num_rows > 0) {
           </div>
         </div>
 
-        <form action="#">
+        <form method="post" action="">
           <div class="row">
             <div class="col-6 pb-10">
-              <div class="pb-3 pt-3">
-                <input type="text" placeholder="نام و نام خانوادگی (اختیاری)" class="w-100 border border-0 rounded-3 my-1 p-2 fw-bold" style="background-color: #F6F9FC; height: 40px;">
+              <div class="pb-3 pt-3" for="name">
+                <input type="text" name="name" placeholder="نام و نام خانوادگی (اختیاری)" class="w-100 border border-0 rounded-3 my-1 p-2 fw-bold text-black" style="background-color: #F6F9FC; height: 40px;"  required>
+              </div>
+              <div class="pb-3" for="email" >
+                <input id="email" type="email" name="email"  placeholder="ایمیل (اجباری)" class="w-100 p-2 border border-0 rounded-3 my-1 fw-bold text-black" style="background-color: #F6F9FC; height: 40px;"  required>
               </div>
               <div class="pb-3">
-                <input type="text" placeholder="ایمیل (اجباری)" class="w-100 p-2 border border-0 rounded-3 my-1 fw-bold" style="background-color: #F6F9FC; height: 40px;">
-              </div>
-              <div class="pb-3">
-                <input type="text" placeholder="شماره تماس (اجباری)" class="w-100 p-2 border border-0 rounded-3 my-1 fw-bold" style="background-color: #F6F9FC; height: 40px;">
+                <input type="text" placeholder="شماره تماس (اجباری)" class="w-100 p-2 border border-0 rounded-3 my-1 fw-bold text-black" style="background-color: #F6F9FC; height: 40px;"  required>
               </div>
             </div>
             <div class="col-6 pb-10">
 
               <div>
-                <textarea type="text" placeholder="متن پیام خود را وارد کنید (اجباری)" class="border border-0 rounded-3 w-100 my-1 p-2 fw-bold" style="background-color: #F6F9FC; height: 200px;"></textarea>
+                <textarea type="text" placeholder="متن پیام خود را وارد کنید (اجباری)" class="border border-0 rounded-3 w-100 my-1 p-2 fw-bold text-black" style="background-color: #F6F9FC; height: 200px;"  required></textarea>
                 <div class=" text-start px-4 border-3 justify-content-center ">
                   <button type="submit " class="btn btn-outline-warning"><b>ارسال پیام </b></button>
                 </div>
@@ -216,5 +216,34 @@ if ($resultpr->num_rows > 0) {
     </div>
   </div>
 </div>
+
+<?php 
+if ($result->num_rows > 0) {
+  while($row = $result->fetch_assoc()) {
+      $id = $row["id"];
+      $user_name = $row["user_name"];
+      $email = $row["email"];
+      $phone_number = $row["phone_number"];
+      $message = $row["message"];
+
+      $insert_sql = "INSERT INTO another_table (id, user_name, email, phone_number, message) VALUES ('$id', '$user_name', '$email', '$phone_number', '$message')";
+        if ($conn->query($insert_sql) === TRUE) {
+            echo "Record inserted successfully";
+         else {
+            echo "Error: " . $insert_sql . "<br>" . $conn->error;
+        }
+      }
+    
+    }
+  }
+
+ else {
+    echo "0 results";
+ 
+
+$conn->close();
+ }
+
+?>
 
 <?php include 'footer.php' ?>

@@ -61,6 +61,76 @@ include './include/header.php';
 
 </div>
 
+
+<?php
+// delete projects
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["delete_project_id"])) {
+    $projectId = $_POST["delete_project_id"];
+    
+    $sql = "DELETE FROM projects WHERE id = $projectId";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "Project deleted successfully";
+    } else {
+        echo "Error deleting project: " . $conn->error;
+    }
+}
+
+
+// edit project
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["edit_project_id"])) {
+    $projectId = $_POST["edit_project_id"];
+    $newProjectName = $_POST["new_project_name"];
+    $newProjectDescription = $_POST["new_project_description"];
+  // Query برای به‌روزرسانی اطلاعات پروژه
+  $sql = "UPDATE projects SET name='$newProjectName', description='$newProjectDescription' WHERE id=$projectId";
+
+  if ($conn->query($sql) === TRUE) {
+      echo "Project edited successfully";
+  } else {
+      echo "Error editing project: " . $conn->error;
+  }
+}
+
+$conn->close();
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+<?php
+
+if ($conn->connect_error) {
+    die("اتصال به دیتابیس ناموفق بود: " . $conn->connect_error);
+}
+
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $projectName = $_POST['projectName'];
+    $projectDescription = $_POST['projectDescription'];
+    $stmt = $conn->prepare("INSERT INTO projects (project_name, project_description) VALUES (?, ?)");
+    $stmt->bind_param("ss", $projectName, $projectDescription);
+
+    if ($stmt->execute()) {
+        echo "پروژه با موفقیت اضافه شد.";
+    } else {
+        echo "خطا در اضافه کردن پروژه: " . $conn->error;
+    }
+
+    $stmt->close();
+}
+
+$conn->close();
+?>
 <?php 
 include './include/footer.php';
 ?>
